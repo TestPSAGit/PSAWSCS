@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="TestAllHome" parallel="methods" thread-count="1">
+
+    <test name="HomePageComponents">
+        <classes>
+            <class name="Peugeot.PreprodHomePagetestFranceTest" />
+            <class name="Peugeot.PreprodHomePagetestSpainTest" />
+            <class name="Peugeot.PreprodHomePagetestItalyTest" />
+            
+        </classes>
+    </test>
+
+
+</suite>

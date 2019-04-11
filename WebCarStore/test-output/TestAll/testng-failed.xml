@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [TestAll]" parallel="methods">
+  <test thread-count="1" name="HomePageComponents(failed)" parallel="methods">
+    <classes>
+      <class name="Peugeot.PreProdHomePageComponentsPeugeotBelgiumFRTest">
+        <methods>
+          <include name="GotTheCookiesPopUp"/>
+          <include name="GotTheUserGeneralConditionsPage"/>
+          <include name="AfterTest"/>
+          <include name="BeforeTest"/>
+        </methods>
+      </class> <!-- Peugeot.PreProdHomePageComponentsPeugeotBelgiumFRTest -->
+      <class name="Peugeot.PreProdHomePageComponentsPeugeotItalyTest">
+        <methods>
+          <include name="GotTheCookiesPopUp"/>
+          <include name="BeforeTest"/>
+          <include name="AfterTest"/>
+        </methods>
+      </class> <!-- Peugeot.PreProdHomePageComponentsPeugeotItalyTest -->
+      <class name="Peugeot.PreProdHomePageComponentsPeugeotBelgiumNLTest">
+        <methods>
+          <include name="AfterTest"/>
+          <include name="BeforeTest"/>
+          <include name="GotTheUserGeneralConditionsPage"/>
+          <include name="TheTextUnderThePageTitleIsCorrect"/>
+        </methods>
+      </class> <!-- Peugeot.PreProdHomePageComponentsPeugeotBelgiumNLTest -->
+      <class name="Peugeot.PreProdHomePageComponentsPeugeotSpainTest">
+        <methods>
+          <include name="AfterTest"/>
+          <include name="BeforeTest"/>
+          <include name="TheUserGeneralConditionsTextIsPresent"/>
+          <include name="GotTheUserGeneralConditionsPDF"/>
+          <include name="GotYoutubePageWhenClickingTheyoutubeIcone"/>
+          <include name="GotTheCookiesPopUp"/>
+        </methods>
+      </class> <!-- Peugeot.PreProdHomePageComponentsPeugeotSpainTest -->
+    </classes>
+  </test> <!-- HomePageComponents(failed) -->
+</suite> <!-- Failed suite [TestAll] -->
