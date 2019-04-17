@@ -3,6 +3,8 @@
 	<name>WebCarStore</name>
 	<comment></comment>
 	<projects>
+		<project>PSA</project>
+		<project>RemoteSystemsTempFiles</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
