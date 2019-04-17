@@ -8,8 +8,8 @@
             <active>true</active>
             <username>E562418</username>
             <password>Id133499</password>
-            <host>http://vip-proxypac.inetpsa.com:8083/ProxyNTLM.pac</host>
-            <port>8083</port>
+            <host>http.ntlm.internetpsa.inetpsa.com</host>
+            <port>8080</port>
         </proxy>
     </proxies>
 </settings>
