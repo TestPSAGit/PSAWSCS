@@ -41,9 +41,6 @@
 	<classpathentry kind="lib" path="C:/Users/E562418/Downloads/selenium-server-3.9.1/libs/cssparser-0.9.24.jar"/>
 	<classpathentry kind="lib" path="C:/Users/E562418/Downloads/selenium-server-3.9.1/libs/gson-2.8.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/E562418/Downloads/selenium-server-3.9.1/libs/guava-23.6-jre.jar"/>
-	<classpathentry kind="lib" path="C:/Users/E562418/Downloads/selenium-server-3.9.1/libs/htmlunit-2.29.jar"/>
-	<classpathentry kind="lib" path="C:/Users/E562418/Downloads/selenium-server-3.9.1/libs/htmlunit-core-js-2.28.jar"/>
-	<classpathentry kind="lib" path="C:/Users/E562418/Downloads/selenium-server-3.9.1/libs/htmlunit-driver-2.29.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/E562418/Downloads/selenium-server-3.9.1/libs/httpclient-4.5.3.jar"/>
 	<classpathentry kind="lib" path="C:/Users/E562418/Downloads/selenium-server-3.9.1/libs/httpcore-4.4.6.jar"/>
 	<classpathentry kind="lib" path="C:/Users/E562418/Downloads/selenium-server-3.9.1/libs/httpmime-4.5.3.jar"/>
@@ -69,6 +66,15 @@
 	<classpathentry kind="lib" path="C:/Users/E562418/Downloads/selenium-server-3.9.1/libs/xml-apis-1.4.01.jar"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-10">
+		<attributes>
+			<attribute name="module" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/E562418/Downloads/apache-maven-3.6.1-src.zip"/>
+	<classpathentry kind="lib" path="C:/Users/E562418/Downloads/selenium-server-3.9.1/libs/htmlunit-2.29.jar"/>
+	<classpathentry kind="lib" path="C:/Users/E562418/Downloads/selenium-server-3.9.1/libs/htmlunit-core-js-2.28.jar"/>
+	<classpathentry kind="lib" path="C:/Users/E562418/Downloads/selenium-server-3.9.1/libs/htmlunit-driver-2.29.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
