@@ -26,7 +26,7 @@ public class WidgetTest {
     @Test(priority = 1)
 
     public void TheListOfModels() {
-        String[] ModelsList = WD.GetMdelList(driver);
+        String[] ModelsList = WD.GetModelsList(driver);
         for (int i = 0; i < ModelsList.length; i++) {
 
             System.out.println(ModelsList[i]);

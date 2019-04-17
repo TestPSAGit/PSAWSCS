@@ -16,7 +16,7 @@ public class Widget {
     static String[] refineList;
     static String[] ModelsList;
 
-    static String[] GetMdelList(WebDriver driver) {
+    static String[] GetModelsList(WebDriver driver) {
         WaitS.Wait(4000);
         driver.findElement(By.xpath("//span[@class='ng-tns-c5-1 ng-star-inserted']")).click();
         WaitS.Wait(2000);
@@ -40,6 +40,4 @@ public class Widget {
         return ModelsList;
     }
 
-    // refineList = elementsRoot.get(0).getText().split(regex);
-    // return refineList;
 }
