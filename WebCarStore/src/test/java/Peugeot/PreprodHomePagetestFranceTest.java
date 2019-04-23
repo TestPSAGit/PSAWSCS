@@ -5,16 +5,37 @@ package Peugeot;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import Methodes.WaitS;
 
 public class PreprodHomePagetestFranceTest {
     static WebDriver driver;
+    public ExtentReports extent;
+    public ExtentHtmlReporter htmlReports;
+    public ExtentTest test;
+    String filename = System.getProperty("C:\\Users\\E562418\\Desktop\\Report.html");
 
     @BeforeMethod
     public void BeforeTest() {
+
+        htmlReports = new ExtentHtmlReporter(filename);
+        extent = new ExtentReports();
+        extent.attachReporter(htmlReports);
+        htmlReports.config().setReportName("PSA Regression testing");
+        htmlReports.config().setTheme(Theme.STANDARD);
+
         driver = InitialiseDrivers.InitialiseChromDriver();
         driver.get("http://fr.store.peugeot.preprod.inetpsa.com/peugeot/Accueil");
         driver.manage().deleteAllCookies();
@@ -42,7 +63,7 @@ public class PreprodHomePagetestFranceTest {
         driver.close();
     }
 
-    @Test(priority = 1)
+    @Ignore
     public void TheNumberOfofferschangeWhenChosingAModelAndLocation() {
 
         String[] modelsList = HomePagePE.GetModelsList(driver);
@@ -68,6 +89,26 @@ public class PreprodHomePagetestFranceTest {
         }
         assert (Error == 0);
         driver.close();
+    }
+
+    @AfterTest
+
+    public void tearDown() {
+        extent.flush();
+    }
+
+    @AfterMethod
+
+    public void checkResults(ITestResult testResults) {
+
+        if (testResults.getStatus() == ITestResult.FAILURE) {
+            test.log(Status.FAIL, "Test fails");
+            test.log(Status.FAIL, testResults.getThrowable());
+
+        } else if (testResults.getStatus() == ITestResult.SKIP) {
+            test.log(Status.SKIP, testResults.getThrowable());
+        }
+
     }
 
 }
