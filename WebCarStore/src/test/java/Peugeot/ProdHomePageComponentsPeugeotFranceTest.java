@@ -8,6 +8,9 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
+import Peugeot.HomePagePEComposants;
+import Peugeot.InitialiseDrivers;
+
 public class ProdHomePageComponentsPeugeotFranceTest {
     static WebDriver driver;
     HomePagePEComposants hp = new HomePagePEComposants();
@@ -24,7 +27,7 @@ public class ProdHomePageComponentsPeugeotFranceTest {
 
     }
 
-    // @Test(priority = 1)
+    // @TestFunctions(priority = 1)
 
     public void ThePageTitleisCorrect() {
         assert (hp.CheckTitlePresent(driver).equals("WEBSTORE"));

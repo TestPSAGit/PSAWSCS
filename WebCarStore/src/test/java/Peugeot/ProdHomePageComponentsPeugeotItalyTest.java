@@ -24,7 +24,7 @@ public class ProdHomePageComponentsPeugeotItalyTest {
 
     }
 
-    // @Test(priority = 1)
+    // @TestFunctions(priority = 1)
 
     public void ThePageTitleisCorrect() {
         assert (hp.CheckTitlePresent(driver).equals("WEBSTORE"));

@@ -102,7 +102,7 @@ public class PreprodHomePagetestFranceTest {
     public void checkResults(ITestResult testResults) {
 
         if (testResults.getStatus() == ITestResult.FAILURE) {
-            test.log(Status.FAIL, "Test fails");
+            test.log(Status.FAIL, "TestFunctions fails");
             test.log(Status.FAIL, testResults.getThrowable());
 
         } else if (testResults.getStatus() == ITestResult.SKIP) {

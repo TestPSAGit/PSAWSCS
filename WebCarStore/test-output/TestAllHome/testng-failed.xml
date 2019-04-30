@@ -18,19 +18,6 @@
           <include name="AfterTest"/>
         </methods>
       </class> <!-- Peugeot.ProdHomePageComponentsPeugeotBelgiumNLTest -->
-      <class name="Peugeot.ProdHomePageComponentsPeugeotSpainTest">
-        <methods>
-          <include name="AfterTest"/>
-          <include name="GotFacebookPageWhenClickingTheFacebookIcone"/>
-          <include name="GotTheCookiesPopUp"/>
-          <include name="TheFacebookIconeIsPresent"/>
-          <include name="TheTwiterIconeIsPresent"/>
-          <include name="GotTwiterPageWhenClickingTheTwiterIcone"/>
-          <include name="GotYoutubePageWhenClickingTheyoutubeIcone"/>
-          <include name="TheYoutubeIconeIsPresent"/>
-          <include name="BeforeTest"/>
-        </methods>
-      </class> <!-- Peugeot.ProdHomePageComponentsPeugeotSpainTest -->
     </classes>
   </test> <!-- HomePageComponents(failed) -->
 </suite> <!-- Failed suite [TestAllHome] -->

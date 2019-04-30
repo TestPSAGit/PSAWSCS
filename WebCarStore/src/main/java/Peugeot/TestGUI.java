@@ -75,7 +75,7 @@ public class TestGUI {
         BrandCheckBox.addItem("Citoën");
         BrandCheckBox.addItem("DS");
 
-        JButton TestButton = new JButton("Test");
+        JButton TestButton = new JButton("TestFunctions");
 
         TestButton.setBounds(57, 157, 89, 23);
         frame.getContentPane().add(TestButton);

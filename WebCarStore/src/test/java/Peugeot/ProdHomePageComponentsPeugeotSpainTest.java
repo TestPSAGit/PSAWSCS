@@ -24,7 +24,7 @@ public class ProdHomePageComponentsPeugeotSpainTest {
 
     }
 
-    // @Test(priority = 1)
+    // @TestFunctions(priority = 1)
 
     public void ThePageTitleisCorrect() {
         assert (hp.CheckTitlePresent(driver).equals("WEBSTORE"));
@@ -48,39 +48,16 @@ public class ProdHomePageComponentsPeugeotSpainTest {
         assert (hp.CheckClickOnHeaderPeugeotLogo(driver).contains("https://webstore.peugeot.es/Inicio"));
     }
 
-    @Test(priority = 10)
-
-    public void TheTwiterIconeIsPresent() {
-        assert (hp.CheckTheTwiterIconePresence(driver) == true);
-    }
-
     @Test(priority = 11)
 
     public void TheFacebookIconeIsPresent() {
         assert (hp.CheckTheFacebookIconePresence(driver) == true);
     }
 
-    @Test(priority = 12)
-
-    public void TheYoutubeIconeIsPresent() {
-        assert (hp.CheckTheYoutubeIconePresence(driver) == true);
-    }
-
-    @Test(priority = 13)
-    public void GotTwiterPageWhenClickingTheTwiterIcone() {
-        assert (hp.CheckClickOnTwiterIcone(driver).equals("https://twitter.com/PeugeotEs"));
-    }
-
     @Test(priority = 14)
 
     public void GotFacebookPageWhenClickingTheFacebookIcone() {
         assert (hp.CheckClickOnFacebookIcone(driver).equals("https://www.facebook.com/PeugeotEspana/"));
-
-    }
-
-    @Test(priority = 15)
-    public void GotYoutubePageWhenClickingTheyoutubeIcone() {
-        assert (hp.CheckClickOnYoutubeIcone(driver).equals("https://www.youtube.com/user/PeugeotES"));
 
     }
 

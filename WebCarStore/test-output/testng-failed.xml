@@ -1,104 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" name="Failed suite [TestAll]" parallel="methods">
-  <test thread-count="1" name="HomePageComponents(failed)" parallel="methods">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Peugeot.PreProdHomePageComponentsPeugeotBelgiumFRTest">
+      <class name="Peugeot.ProdResultPagePeugeotFranceTest">
         <methods>
-          <include name="GotTheUserGeneralConditionsPage"/>
-          <include name="TheYoutubeIconeIsPresent"/>
-          <include name="GotYoutubePageWhenClickingTheyoutubeIcone"/>
-          <include name="TheUserGeneralConditionsTextIsPresent"/>
-          <include name="TheFacebookIconeIsPresent"/>
-          <include name="ThePageTitleisCorrect"/>
-          <include name="GotToHomePageWhenClickingOnThePeugeotLogo"/>
-          <include name="TheTextUnderThePageTitleIsCorrect"/>
-          <include name="GotFacebookPageWhenClickingTheFacebookIcone"/>
-          <include name="TheCookiesTextIsPresent"/>
-          <include name="GotTheCookiesPopUp"/>
-          <include name="AfterTest"/>
-          <include name="ThePeugeotLogoIsDisplayed"/>
+          <include name="TheNumberOfOffersISGreaterWhenAddingAModel"/>
           <include name="BeforeTest"/>
         </methods>
-      </class> <!-- Peugeot.PreProdHomePageComponentsPeugeotBelgiumFRTest -->
-      <class name="Peugeot.PreProdHomePageComponentsPeugeotItalyTest">
-        <methods>
-          <include name="GotToHomePageWhenClickingOnThePeugeotLogo"/>
-          <include name="GotTwiterPageWhenClickingTheTwiterIcone"/>
-          <include name="TheTwiterIconeIsPresent"/>
-          <include name="AfterTest"/>
-          <include name="TheYoutubeIconeIsPresent"/>
-          <include name="GotTheGeneralInformationPage"/>
-          <include name="GotYoutubePageWhenClickingTheyoutubeIcone"/>
-          <include name="TheFacebookIconeIsPresent"/>
-          <include name="TheCookiesTextIsPresent"/>
-          <include name="ThePeugeotLogoIsDisplayed"/>
-          <include name="TheUserGeneralConditionsTextIsPresent"/>
-          <include name="GotTheCookiesPopUp"/>
-          <include name="BeforeTest"/>
-          <include name="GotFacebookPageWhenClickingTheFacebookIcone"/>
-          <include name="TheTextUnderThePageTitleIsCorrect"/>
-        </methods>
-      </class> <!-- Peugeot.PreProdHomePageComponentsPeugeotItalyTest -->
-      <class name="Peugeot.PreProdHomePageComponentsPeugeotBelgiumNLTest">
-        <methods>
-          <include name="ThePageTitleisCorrect"/>
-          <include name="GotToHomePageWhenClickingOnThePeugeotLogo"/>
-          <include name="AfterTest"/>
-          <include name="ThePeugeotLogoIsDisplayed"/>
-          <include name="BeforeTest"/>
-          <include name="GotYoutubePageWhenClickingTheyoutubeIcone"/>
-          <include name="GotTheUserGeneralConditionsPage"/>
-          <include name="TheYoutubeIconeIsPresent"/>
-          <include name="TheTextUnderThePageTitleIsCorrect"/>
-          <include name="TheUserGeneralConditionsTextIsPresent"/>
-        </methods>
-      </class> <!-- Peugeot.PreProdHomePageComponentsPeugeotBelgiumNLTest -->
-      <class name="Peugeot.PreProdHomePageComponentsPeugeotFranceTest">
-        <methods>
-          <include name="AfterTest"/>
-          <include name="TheTwiterIconeIsPresent"/>
-          <include name="GotAPopupWhenClickingOnNeedHelpBotton"/>
-          <include name="TheNeedHelpTextIsDisplayed"/>
-          <include name="GotTheCookiesPopUp"/>
-          <include name="GotToHomePageWhenClickingOnThePeugeotLogo"/>
-          <include name="TheNeedHelpIconeIsDisplayed"/>
-          <include name="TheUserGeneralConditionsTextIsPresent"/>
-          <include name="GotFacebookPageWhenClickingTheFacebookIcone"/>
-          <include name="TheCookiesTextIsPresent"/>
-          <include name="TheFacebookIconeIsPresent"/>
-          <include name="GotYoutubePageWhenClickingTheyoutubeIcone"/>
-          <include name="TheYoutubeIconeIsPresent"/>
-          <include name="TheMySaveIconIsDisplayed"/>
-          <include name="GotTwiterPageWhenClickingTheTwiterIcone"/>
-          <include name="BeforeTest"/>
-          <include name="TheMySaveTextIsDisplayed"/>
-          <include name="GotTheUserGeneralConditionsPDF"/>
-          <include name="ThePeugeotLogoIsDisplayed"/>
-          <include name="TheTextUnderThePageTitleIsCorrect"/>
-          <include name="GotTheSellGeneralConditionsPDF"/>
-          <include name="TheSellGeneralConditionsTextIsPresent"/>
-        </methods>
-      </class> <!-- Peugeot.PreProdHomePageComponentsPeugeotFranceTest -->
-      <class name="Peugeot.PreProdHomePageComponentsPeugeotSpainTest">
-        <methods>
-          <include name="ThePeugeotLogoIsDisplayed"/>
-          <include name="BeforeTest"/>
-          <include name="GotTwiterPageWhenClickingTheTwiterIcone"/>
-          <include name="TheTextUnderThePageTitleIsCorrect"/>
-          <include name="GotTheCookiesPopUp"/>
-          <include name="GotToHomePageWhenClickingOnThePeugeotLogo"/>
-          <include name="TheFacebookIconeIsPresent"/>
-          <include name="GotFacebookPageWhenClickingTheFacebookIcone"/>
-          <include name="AfterTest"/>
-          <include name="TheTwiterIconeIsPresent"/>
-          <include name="TheYoutubeIconeIsPresent"/>
-          <include name="TheCookiesTextIsPresent"/>
-          <include name="TheUserGeneralConditionsTextIsPresent"/>
-          <include name="GotTheUserGeneralConditionsPDF"/>
-          <include name="GotYoutubePageWhenClickingTheyoutubeIcone"/>
-        </methods>
-      </class> <!-- Peugeot.PreProdHomePageComponentsPeugeotSpainTest -->
+      </class> <!-- Peugeot.ProdResultPagePeugeotFranceTest -->
     </classes>
-  </test> <!-- HomePageComponents(failed) -->
-</suite> <!-- Failed suite [TestAll] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
