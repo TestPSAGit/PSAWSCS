@@ -10,8 +10,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
-import Methodes.WaitS;
 import Peugeot.InitialiseDrivers;
+import Utilities.WaitS;
 
 public class PreprodLeadsCitroënTest {
     static WebDriver driver;

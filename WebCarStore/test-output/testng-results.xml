@@ -1,25 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="3" ignored="0" total="61" passed="58">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="175449" started-at="2019-04-30T12:44:19Z" finished-at="2019-04-30T12:47:14Z">
+  <suite name="TestAllHome" duration-ms="165804" started-at="2019-05-02T15:16:57Z" finished-at="2019-05-02T15:19:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="175449" started-at="2019-04-30T12:44:19Z" finished-at="2019-04-30T12:47:14Z">
-      <class name="Peugeot.ProdResultPagePeugeotFranceTest">
-        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:Peugeot.ProdResultPagePeugeotFranceTest@47db50c5]" name="BeforeTest" is-config="true" duration-ms="16228" started-at="2019-04-30T12:44:03Z" finished-at="2019-04-30T12:44:19Z">
+    <test name="HomePageComponents" duration-ms="165804" started-at="2019-05-02T15:16:57Z" finished-at="2019-05-02T15:19:43Z">
+      <class name="Peugeot.ProdHomePageComponentsPeugeotItalyTest">
+        <test-method status="PASS" signature="ThePeugeotLogoIsDisplayed()[pri:2, instance:Peugeot.ProdHomePageComponentsPeugeotItalyTest@eb21112]" name="ThePeugeotLogoIsDisplayed" duration-ms="76" started-at="2019-05-02T15:16:58Z" finished-at="2019-05-02T15:16:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ThePeugeotLogoIsDisplayed -->
+        <test-method status="PASS" signature="TheTextUnderThePageTitleIsCorrect()[pri:7, instance:Peugeot.ProdHomePageComponentsPeugeotItalyTest@eb21112]" name="TheTextUnderThePageTitleIsCorrect" duration-ms="64" started-at="2019-05-02T15:17:11Z" finished-at="2019-05-02T15:17:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheTextUnderThePageTitleIsCorrect -->
+        <test-method status="PASS" signature="GotToHomePageWhenClickingOnThePeugeotLogo()[pri:8, instance:Peugeot.ProdHomePageComponentsPeugeotItalyTest@eb21112]" name="GotToHomePageWhenClickingOnThePeugeotLogo" duration-ms="9529" started-at="2019-05-02T15:17:18Z" finished-at="2019-05-02T15:17:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotToHomePageWhenClickingOnThePeugeotLogo -->
+        <test-method status="PASS" signature="TheTwiterIconeIsPresent()[pri:10, instance:Peugeot.ProdHomePageComponentsPeugeotItalyTest@eb21112]" name="TheTwiterIconeIsPresent" duration-ms="64" started-at="2019-05-02T15:18:25Z" finished-at="2019-05-02T15:18:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheTwiterIconeIsPresent -->
+        <test-method status="PASS" signature="TheFacebookIconeIsPresent()[pri:11, instance:Peugeot.ProdHomePageComponentsPeugeotItalyTest@eb21112]" name="TheFacebookIconeIsPresent" duration-ms="48" started-at="2019-05-02T15:18:25Z" finished-at="2019-05-02T15:18:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheFacebookIconeIsPresent -->
+        <test-method status="PASS" signature="TheYoutubeIconeIsPresent()[pri:12, instance:Peugeot.ProdHomePageComponentsPeugeotItalyTest@eb21112]" name="TheYoutubeIconeIsPresent" duration-ms="44" started-at="2019-05-02T15:18:26Z" finished-at="2019-05-02T15:18:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheYoutubeIconeIsPresent -->
+        <test-method status="PASS" signature="GotTwiterPageWhenClickingTheTwiterIcone()[pri:13, instance:Peugeot.ProdHomePageComponentsPeugeotItalyTest@eb21112]" name="GotTwiterPageWhenClickingTheTwiterIcone" duration-ms="5371" started-at="2019-05-02T15:18:31Z" finished-at="2019-05-02T15:18:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotTwiterPageWhenClickingTheTwiterIcone -->
+        <test-method status="PASS" signature="GotFacebookPageWhenClickingTheFacebookIcone()[pri:14, instance:Peugeot.ProdHomePageComponentsPeugeotItalyTest@eb21112]" name="GotFacebookPageWhenClickingTheFacebookIcone" duration-ms="3548" started-at="2019-05-02T15:18:44Z" finished-at="2019-05-02T15:18:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotFacebookPageWhenClickingTheFacebookIcone -->
+        <test-method status="PASS" signature="GotYoutubePageWhenClickingTheyoutubeIcone()[pri:15, instance:Peugeot.ProdHomePageComponentsPeugeotItalyTest@eb21112]" name="GotYoutubePageWhenClickingTheyoutubeIcone" duration-ms="4887" started-at="2019-05-02T15:19:00Z" finished-at="2019-05-02T15:19:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotYoutubePageWhenClickingTheyoutubeIcone -->
+        <test-method status="PASS" signature="TheUserGeneralConditionsTextIsPresent()[pri:16, instance:Peugeot.ProdHomePageComponentsPeugeotItalyTest@eb21112]" name="TheUserGeneralConditionsTextIsPresent" duration-ms="104" started-at="2019-05-02T15:19:10Z" finished-at="2019-05-02T15:19:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheUserGeneralConditionsTextIsPresent -->
+        <test-method status="PASS" signature="TheCookiesTextIsPresent()[pri:18, instance:Peugeot.ProdHomePageComponentsPeugeotItalyTest@eb21112]" name="TheCookiesTextIsPresent" duration-ms="48" started-at="2019-05-02T15:19:10Z" finished-at="2019-05-02T15:19:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheCookiesTextIsPresent -->
+        <test-method status="PASS" signature="GotTheGeneralInformationPage()[pri:19, instance:Peugeot.ProdHomePageComponentsPeugeotItalyTest@eb21112]" name="GotTheGeneralInformationPage" duration-ms="3462" started-at="2019-05-02T15:19:14Z" finished-at="2019-05-02T15:19:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotTheGeneralInformationPage -->
+        <test-method status="PASS" signature="GotTheCookiesPopUp()[pri:21, instance:Peugeot.ProdHomePageComponentsPeugeotItalyTest@eb21112]" name="GotTheCookiesPopUp" duration-ms="3793" started-at="2019-05-02T15:19:32Z" finished-at="2019-05-02T15:19:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotTheCookiesPopUp -->
+      </class> <!-- Peugeot.ProdHomePageComponentsPeugeotItalyTest -->
+      <class name="Peugeot.ProdHomePageComponentsPeugeotBelgiumFRTest">
+        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:Peugeot.ProdHomePageComponentsPeugeotBelgiumFRTest@3578436e]" name="BeforeTest" is-config="true" duration-ms="13229" started-at="2019-05-02T15:15:22Z" finished-at="2019-05-02T15:15:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="CheckThatThedeliveryDateisGreaterThanTodaysDate()[pri:0, instance:Peugeot.ProdResultPagePeugeotFranceTest@47db50c5]" name="CheckThatThedeliveryDateisGreaterThanTodaysDate" duration-ms="132385" started-at="2019-04-30T12:44:19Z" finished-at="2019-04-30T12:46:31Z">
+        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:Peugeot.ProdHomePageComponentsPeugeotBelgiumNLTest@706a04ae]" name="BeforeTest" is-config="true" duration-ms="14783" started-at="2019-05-02T15:15:35Z" finished-at="2019-05-02T15:15:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CheckThatThedeliveryDateisGreaterThanTodaysDate -->
-        <test-method status="FAIL" signature="TheNumberOfOffersISGreaterWhenAddingAModel()[pri:0, instance:Peugeot.ProdResultPagePeugeotFranceTest@47db50c5]" name="TheNumberOfOffersISGreaterWhenAddingAModel" duration-ms="43001" started-at="2019-04-30T12:46:31Z" finished-at="2019-04-30T12:47:14Z">
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:Peugeot.ProdHomePageComponentsPeugeotFranceTest@43a0cee9]" name="BeforeTest" is-config="true" duration-ms="21714" started-at="2019-05-02T15:15:50Z" finished-at="2019-05-02T15:16:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:Peugeot.ProdHomePageComponentsPeugeotItalyTest@eb21112]" name="BeforeTest" is-config="true" duration-ms="26165" started-at="2019-05-02T15:16:12Z" finished-at="2019-05-02T15:16:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:Peugeot.ProdHomePageComponentsPeugeotSpainTest@2eda0940]" name="BeforeTest" is-config="true" duration-ms="19046" started-at="2019-05-02T15:16:38Z" finished-at="2019-05-02T15:16:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="ThePeugeotLogoIsDisplayed()[pri:2, instance:Peugeot.ProdHomePageComponentsPeugeotBelgiumFRTest@3578436e]" name="ThePeugeotLogoIsDisplayed" duration-ms="72" started-at="2019-05-02T15:16:58Z" finished-at="2019-05-02T15:16:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ThePeugeotLogoIsDisplayed -->
+        <test-method status="FAIL" signature="TheTextUnderThePageTitleIsCorrect()[pri:7, instance:Peugeot.ProdHomePageComponentsPeugeotBelgiumFRTest@3578436e]" name="TheTextUnderThePageTitleIsCorrect" duration-ms="56" started-at="2019-05-02T15:17:11Z" finished-at="2019-05-02T15:17:11Z">
           <exception class="java.lang.AssertionError">
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError
-at Peugeot.ProdResultPagePeugeotFranceTest.TheNumberOfOffersISGreaterWhenAddingAModel(ProdResultPagePeugeotFranceTest.java:100)
+at Peugeot.ProdHomePageComponentsPeugeotBelgiumFRTest.TheTextUnderThePageTitleIsCorrect(ProdHomePageComponentsPeugeotBelgiumFRTest.java:41)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -30,28 +100,306 @@ at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TheNumberOfOffersISGreaterWhenAddingAModel -->
-      </class> <!-- Peugeot.ProdResultPagePeugeotFranceTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- TheTextUnderThePageTitleIsCorrect -->
+        <test-method status="PASS" signature="GotToHomePageWhenClickingOnThePeugeotLogo()[pri:8, instance:Peugeot.ProdHomePageComponentsPeugeotBelgiumFRTest@3578436e]" name="GotToHomePageWhenClickingOnThePeugeotLogo" duration-ms="1855" started-at="2019-05-02T15:18:16Z" finished-at="2019-05-02T15:18:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotToHomePageWhenClickingOnThePeugeotLogo -->
+        <test-method status="PASS" signature="TheFacebookIconeIsPresent()[pri:11, instance:Peugeot.ProdHomePageComponentsPeugeotBelgiumFRTest@3578436e]" name="TheFacebookIconeIsPresent" duration-ms="56" started-at="2019-05-02T15:18:25Z" finished-at="2019-05-02T15:18:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheFacebookIconeIsPresent -->
+        <test-method status="PASS" signature="TheYoutubeIconeIsPresent()[pri:12, instance:Peugeot.ProdHomePageComponentsPeugeotBelgiumFRTest@3578436e]" name="TheYoutubeIconeIsPresent" duration-ms="36" started-at="2019-05-02T15:18:26Z" finished-at="2019-05-02T15:18:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheYoutubeIconeIsPresent -->
+        <test-method status="PASS" signature="GotFacebookPageWhenClickingTheFacebookIcone()[pri:14, instance:Peugeot.ProdHomePageComponentsPeugeotBelgiumFRTest@3578436e]" name="GotFacebookPageWhenClickingTheFacebookIcone" duration-ms="3449" started-at="2019-05-02T15:18:51Z" finished-at="2019-05-02T15:18:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotFacebookPageWhenClickingTheFacebookIcone -->
+        <test-method status="PASS" signature="GotYoutubePageWhenClickingTheyoutubeIcone()[pri:15, instance:Peugeot.ProdHomePageComponentsPeugeotBelgiumFRTest@3578436e]" name="GotYoutubePageWhenClickingTheyoutubeIcone" duration-ms="4887" started-at="2019-05-02T15:19:05Z" finished-at="2019-05-02T15:19:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotYoutubePageWhenClickingTheyoutubeIcone -->
+        <test-method status="PASS" signature="TheUserGeneralConditionsTextIsPresent()[pri:16, instance:Peugeot.ProdHomePageComponentsPeugeotBelgiumFRTest@3578436e]" name="TheUserGeneralConditionsTextIsPresent" duration-ms="112" started-at="2019-05-02T15:19:10Z" finished-at="2019-05-02T15:19:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheUserGeneralConditionsTextIsPresent -->
+        <test-method status="PASS" signature="TheCookiesTextIsPresent()[pri:18, instance:Peugeot.ProdHomePageComponentsPeugeotBelgiumFRTest@3578436e]" name="TheCookiesTextIsPresent" duration-ms="44" started-at="2019-05-02T15:19:11Z" finished-at="2019-05-02T15:19:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheCookiesTextIsPresent -->
+        <test-method status="PASS" signature="GotTheUserGeneralConditionsPage()[pri:19, instance:Peugeot.ProdHomePageComponentsPeugeotBelgiumFRTest@3578436e]" name="GotTheUserGeneralConditionsPage" duration-ms="3415" started-at="2019-05-02T15:19:21Z" finished-at="2019-05-02T15:19:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotTheUserGeneralConditionsPage -->
+        <test-method status="FAIL" signature="GotTheCookiesPopUp()[pri:21, instance:Peugeot.ProdHomePageComponentsPeugeotBelgiumFRTest@3578436e]" name="GotTheCookiesPopUp" duration-ms="3235" started-at="2019-05-02T15:19:40Z" finished-at="2019-05-02T15:19:43Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[@id='_psaihm_title']"}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:42:28.403Z'
+System info: host: 'B1009809', ip: '10.82.56.205', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: C:\Users\E562418\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51043}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: d722475c8ebe232cc1ae622240e376b5
+*** Element info: {Using=xpath, value=//p[@id='_psaihm_title']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[@id='_psaihm_title']"}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:42:28.403Z'
+System info: host: 'B1009809', ip: '10.82.56.205', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: C:\Users\E562418\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51043}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: d722475c8ebe232cc1ae622240e376b5
+*** Element info: {Using=xpath, value=//p[@id='_psaihm_title']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+at Peugeot.HomePagePEComposants.CheckClickOnCookies(HomePagePEComposants.java:163)
+at Peugeot.ProdHomePageComponentsPeugeotBelgiumFRTest.GotTheCookiesPopUp(ProdHomePageComponentsPeugeotBelgiumFRTest.java:98)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotTheCookiesPopUp -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:Peugeot.ProdHomePageComponentsPeugeotBelgiumFRTest@3578436e]" name="AfterTest" is-config="true" duration-ms="208" started-at="2019-05-02T15:19:43Z" finished-at="2019-05-02T15:19:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:Peugeot.ProdHomePageComponentsPeugeotBelgiumNLTest@706a04ae]" name="AfterTest" is-config="true" duration-ms="333" started-at="2019-05-02T15:19:44Z" finished-at="2019-05-02T15:19:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:Peugeot.ProdHomePageComponentsPeugeotFranceTest@43a0cee9]" name="AfterTest" is-config="true" duration-ms="316" started-at="2019-05-02T15:19:44Z" finished-at="2019-05-02T15:19:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:Peugeot.ProdHomePageComponentsPeugeotItalyTest@eb21112]" name="AfterTest" is-config="true" duration-ms="328" started-at="2019-05-02T15:19:44Z" finished-at="2019-05-02T15:19:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:Peugeot.ProdHomePageComponentsPeugeotSpainTest@2eda0940]" name="AfterTest" is-config="true" duration-ms="316" started-at="2019-05-02T15:19:45Z" finished-at="2019-05-02T15:19:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- Peugeot.ProdHomePageComponentsPeugeotBelgiumFRTest -->
+      <class name="Peugeot.ProdHomePageComponentsPeugeotBelgiumNLTest">
+        <test-method status="PASS" signature="ThePageTitleisCorrect()[pri:1, instance:Peugeot.ProdHomePageComponentsPeugeotBelgiumNLTest@706a04ae]" name="ThePageTitleisCorrect" duration-ms="292" started-at="2019-05-02T15:16:57Z" finished-at="2019-05-02T15:16:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ThePageTitleisCorrect -->
+        <test-method status="PASS" signature="ThePeugeotLogoIsDisplayed()[pri:2, instance:Peugeot.ProdHomePageComponentsPeugeotBelgiumNLTest@706a04ae]" name="ThePeugeotLogoIsDisplayed" duration-ms="48" started-at="2019-05-02T15:16:58Z" finished-at="2019-05-02T15:16:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ThePeugeotLogoIsDisplayed -->
+        <test-method status="PASS" signature="TheTextUnderThePageTitleIsCorrect()[pri:3, instance:Peugeot.ProdHomePageComponentsPeugeotBelgiumNLTest@706a04ae]" name="TheTextUnderThePageTitleIsCorrect" duration-ms="65" started-at="2019-05-02T15:16:58Z" finished-at="2019-05-02T15:16:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheTextUnderThePageTitleIsCorrect -->
+        <test-method status="FAIL" signature="GotToHomePageWhenClickingOnThePeugeotLogo()[pri:4, instance:Peugeot.ProdHomePageComponentsPeugeotBelgiumNLTest@706a04ae]" name="GotToHomePageWhenClickingOnThePeugeotLogo" duration-ms="8142" started-at="2019-05-02T15:16:58Z" finished-at="2019-05-02T15:17:06Z">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at Peugeot.ProdHomePageComponentsPeugeotBelgiumNLTest.GotToHomePageWhenClickingOnThePeugeotLogo(ProdHomePageComponentsPeugeotBelgiumNLTest.java:47)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotToHomePageWhenClickingOnThePeugeotLogo -->
+        <test-method status="PASS" signature="TheYoutubeIconeIsPresent()[pri:5, instance:Peugeot.ProdHomePageComponentsPeugeotBelgiumNLTest@706a04ae]" name="TheYoutubeIconeIsPresent" duration-ms="48" started-at="2019-05-02T15:17:06Z" finished-at="2019-05-02T15:17:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheYoutubeIconeIsPresent -->
+        <test-method status="PASS" signature="GotYoutubePageWhenClickingTheyoutubeIcone()[pri:6, instance:Peugeot.ProdHomePageComponentsPeugeotBelgiumNLTest@706a04ae]" name="GotYoutubePageWhenClickingTheyoutubeIcone" duration-ms="4603" started-at="2019-05-02T15:17:07Z" finished-at="2019-05-02T15:17:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotYoutubePageWhenClickingTheyoutubeIcone -->
+        <test-method status="PASS" signature="TheUserGeneralConditionsTextIsPresent()[pri:7, instance:Peugeot.ProdHomePageComponentsPeugeotBelgiumNLTest@706a04ae]" name="TheUserGeneralConditionsTextIsPresent" duration-ms="80" started-at="2019-05-02T15:17:11Z" finished-at="2019-05-02T15:17:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheUserGeneralConditionsTextIsPresent -->
+        <test-method status="PASS" signature="GotTheUserGeneralConditionsPage()[pri:8, instance:Peugeot.ProdHomePageComponentsPeugeotBelgiumNLTest@706a04ae]" name="GotTheUserGeneralConditionsPage" duration-ms="3378" started-at="2019-05-02T15:18:18Z" finished-at="2019-05-02T15:18:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotTheUserGeneralConditionsPage -->
+      </class> <!-- Peugeot.ProdHomePageComponentsPeugeotBelgiumNLTest -->
+      <class name="Peugeot.ProdHomePageComponentsPeugeotFranceTest">
+        <test-method status="PASS" signature="ThePeugeotLogoIsDisplayed()[pri:2, instance:Peugeot.ProdHomePageComponentsPeugeotFranceTest@43a0cee9]" name="ThePeugeotLogoIsDisplayed" duration-ms="254" started-at="2019-05-02T15:16:57Z" finished-at="2019-05-02T15:16:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ThePeugeotLogoIsDisplayed -->
+        <test-method status="PASS" signature="TheMySaveIconIsDisplayed()[pri:3, instance:Peugeot.ProdHomePageComponentsPeugeotFranceTest@43a0cee9]" name="TheMySaveIconIsDisplayed" duration-ms="68" started-at="2019-05-02T15:16:58Z" finished-at="2019-05-02T15:16:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheMySaveIconIsDisplayed -->
+        <test-method status="PASS" signature="TheMySaveTextIsDisplayed()[pri:4, instance:Peugeot.ProdHomePageComponentsPeugeotFranceTest@43a0cee9]" name="TheMySaveTextIsDisplayed" duration-ms="56" started-at="2019-05-02T15:16:58Z" finished-at="2019-05-02T15:16:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheMySaveTextIsDisplayed -->
+        <test-method status="PASS" signature="TheNeedHelpIconeIsDisplayed()[pri:5, instance:Peugeot.ProdHomePageComponentsPeugeotFranceTest@43a0cee9]" name="TheNeedHelpIconeIsDisplayed" duration-ms="44" started-at="2019-05-02T15:17:06Z" finished-at="2019-05-02T15:17:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheNeedHelpIconeIsDisplayed -->
+        <test-method status="PASS" signature="TheNeedHelpTextIsDisplayed()[pri:6, instance:Peugeot.ProdHomePageComponentsPeugeotFranceTest@43a0cee9]" name="TheNeedHelpTextIsDisplayed" duration-ms="48" started-at="2019-05-02T15:17:06Z" finished-at="2019-05-02T15:17:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheNeedHelpTextIsDisplayed -->
+        <test-method status="PASS" signature="TheTextUnderThePageTitleIsCorrect()[pri:7, instance:Peugeot.ProdHomePageComponentsPeugeotFranceTest@43a0cee9]" name="TheTextUnderThePageTitleIsCorrect" duration-ms="68" started-at="2019-05-02T15:17:11Z" finished-at="2019-05-02T15:17:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheTextUnderThePageTitleIsCorrect -->
+        <test-method status="PASS" signature="GotToHomePageWhenClickingOnThePeugeotLogo()[pri:8, instance:Peugeot.ProdHomePageComponentsPeugeotFranceTest@43a0cee9]" name="GotToHomePageWhenClickingOnThePeugeotLogo" duration-ms="6894" started-at="2019-05-02T15:17:12Z" finished-at="2019-05-02T15:17:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotToHomePageWhenClickingOnThePeugeotLogo -->
+        <test-method status="PASS" signature="GotAPopupWhenClickingOnNeedHelpBotton()[pri:9, instance:Peugeot.ProdHomePageComponentsPeugeotFranceTest@43a0cee9]" name="GotAPopupWhenClickingOnNeedHelpBotton" duration-ms="3445" started-at="2019-05-02T15:18:22Z" finished-at="2019-05-02T15:18:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotAPopupWhenClickingOnNeedHelpBotton -->
+        <test-method status="PASS" signature="TheTwiterIconeIsPresent()[pri:10, instance:Peugeot.ProdHomePageComponentsPeugeotFranceTest@43a0cee9]" name="TheTwiterIconeIsPresent" duration-ms="68" started-at="2019-05-02T15:18:25Z" finished-at="2019-05-02T15:18:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheTwiterIconeIsPresent -->
+        <test-method status="PASS" signature="TheFacebookIconeIsPresent()[pri:11, instance:Peugeot.ProdHomePageComponentsPeugeotFranceTest@43a0cee9]" name="TheFacebookIconeIsPresent" duration-ms="40" started-at="2019-05-02T15:18:25Z" finished-at="2019-05-02T15:18:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheFacebookIconeIsPresent -->
+        <test-method status="PASS" signature="TheYoutubeIconeIsPresent()[pri:12, instance:Peugeot.ProdHomePageComponentsPeugeotFranceTest@43a0cee9]" name="TheYoutubeIconeIsPresent" duration-ms="48" started-at="2019-05-02T15:18:25Z" finished-at="2019-05-02T15:18:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheYoutubeIconeIsPresent -->
+        <test-method status="PASS" signature="GotTwiterPageWhenClickingTheTwiterIcone()[pri:13, instance:Peugeot.ProdHomePageComponentsPeugeotFranceTest@43a0cee9]" name="GotTwiterPageWhenClickingTheTwiterIcone" duration-ms="5007" started-at="2019-05-02T15:18:26Z" finished-at="2019-05-02T15:18:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotTwiterPageWhenClickingTheTwiterIcone -->
+        <test-method status="PASS" signature="GotFacebookPageWhenClickingTheFacebookIcone()[pri:14, instance:Peugeot.ProdHomePageComponentsPeugeotFranceTest@43a0cee9]" name="GotFacebookPageWhenClickingTheFacebookIcone" duration-ms="8139" started-at="2019-05-02T15:18:36Z" finished-at="2019-05-02T15:18:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotFacebookPageWhenClickingTheFacebookIcone -->
+        <test-method status="PASS" signature="GotYoutubePageWhenClickingTheyoutubeIcone()[pri:15, instance:Peugeot.ProdHomePageComponentsPeugeotFranceTest@43a0cee9]" name="GotYoutubePageWhenClickingTheyoutubeIcone" duration-ms="5431" started-at="2019-05-02T15:18:55Z" finished-at="2019-05-02T15:19:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotYoutubePageWhenClickingTheyoutubeIcone -->
+        <test-method status="PASS" signature="TheUserGeneralConditionsTextIsPresent()[pri:16, instance:Peugeot.ProdHomePageComponentsPeugeotFranceTest@43a0cee9]" name="TheUserGeneralConditionsTextIsPresent" duration-ms="120" started-at="2019-05-02T15:19:10Z" finished-at="2019-05-02T15:19:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheUserGeneralConditionsTextIsPresent -->
+        <test-method status="PASS" signature="TheSellGeneralConditionsTextIsPresent()[pri:17, instance:Peugeot.ProdHomePageComponentsPeugeotFranceTest@43a0cee9]" name="TheSellGeneralConditionsTextIsPresent" duration-ms="48" started-at="2019-05-02T15:19:10Z" finished-at="2019-05-02T15:19:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheSellGeneralConditionsTextIsPresent -->
+        <test-method status="PASS" signature="TheCookiesTextIsPresent()[pri:18, instance:Peugeot.ProdHomePageComponentsPeugeotFranceTest@43a0cee9]" name="TheCookiesTextIsPresent" duration-ms="48" started-at="2019-05-02T15:19:10Z" finished-at="2019-05-02T15:19:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheCookiesTextIsPresent -->
+        <test-method status="PASS" signature="GotTheUserGeneralConditionsPDF()[pri:19, instance:Peugeot.ProdHomePageComponentsPeugeotFranceTest@43a0cee9]" name="GotTheUserGeneralConditionsPDF" duration-ms="3424" started-at="2019-05-02T15:19:11Z" finished-at="2019-05-02T15:19:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotTheUserGeneralConditionsPDF -->
+        <test-method status="PASS" signature="GotTheSellGeneralConditionsPDF()[pri:20, instance:Peugeot.ProdHomePageComponentsPeugeotFranceTest@43a0cee9]" name="GotTheSellGeneralConditionsPDF" duration-ms="3471" started-at="2019-05-02T15:19:24Z" finished-at="2019-05-02T15:19:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotTheSellGeneralConditionsPDF -->
+        <test-method status="PASS" signature="GotTheCookiesPopUp()[pri:21, instance:Peugeot.ProdHomePageComponentsPeugeotFranceTest@43a0cee9]" name="GotTheCookiesPopUp" duration-ms="4222" started-at="2019-05-02T15:19:28Z" finished-at="2019-05-02T15:19:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotTheCookiesPopUp -->
+      </class> <!-- Peugeot.ProdHomePageComponentsPeugeotFranceTest -->
+      <class name="Peugeot.ProdHomePageComponentsPeugeotSpainTest">
+        <test-method status="PASS" signature="ThePeugeotLogoIsDisplayed()[pri:2, instance:Peugeot.ProdHomePageComponentsPeugeotSpainTest@2eda0940]" name="ThePeugeotLogoIsDisplayed" duration-ms="80" started-at="2019-05-02T15:16:58Z" finished-at="2019-05-02T15:16:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ThePeugeotLogoIsDisplayed -->
+        <test-method status="PASS" signature="TheTextUnderThePageTitleIsCorrect()[pri:7, instance:Peugeot.ProdHomePageComponentsPeugeotSpainTest@2eda0940]" name="TheTextUnderThePageTitleIsCorrect" duration-ms="84" started-at="2019-05-02T15:17:11Z" finished-at="2019-05-02T15:17:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheTextUnderThePageTitleIsCorrect -->
+        <test-method status="PASS" signature="GotToHomePageWhenClickingOnThePeugeotLogo()[pri:8, instance:Peugeot.ProdHomePageComponentsPeugeotSpainTest@2eda0940]" name="GotToHomePageWhenClickingOnThePeugeotLogo" duration-ms="48510" started-at="2019-05-02T15:17:28Z" finished-at="2019-05-02T15:18:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotToHomePageWhenClickingOnThePeugeotLogo -->
+        <test-method status="PASS" signature="TheFacebookIconeIsPresent()[pri:11, instance:Peugeot.ProdHomePageComponentsPeugeotSpainTest@2eda0940]" name="TheFacebookIconeIsPresent" duration-ms="48" started-at="2019-05-02T15:18:25Z" finished-at="2019-05-02T15:18:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheFacebookIconeIsPresent -->
+        <test-method status="PASS" signature="GotFacebookPageWhenClickingTheFacebookIcone()[pri:14, instance:Peugeot.ProdHomePageComponentsPeugeotSpainTest@2eda0940]" name="GotFacebookPageWhenClickingTheFacebookIcone" duration-ms="3573" started-at="2019-05-02T15:18:48Z" finished-at="2019-05-02T15:18:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotFacebookPageWhenClickingTheFacebookIcone -->
+        <test-method status="PASS" signature="TheUserGeneralConditionsTextIsPresent()[pri:16, instance:Peugeot.ProdHomePageComponentsPeugeotSpainTest@2eda0940]" name="TheUserGeneralConditionsTextIsPresent" duration-ms="100" started-at="2019-05-02T15:19:10Z" finished-at="2019-05-02T15:19:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheUserGeneralConditionsTextIsPresent -->
+        <test-method status="PASS" signature="TheCookiesTextIsPresent()[pri:18, instance:Peugeot.ProdHomePageComponentsPeugeotSpainTest@2eda0940]" name="TheCookiesTextIsPresent" duration-ms="45" started-at="2019-05-02T15:19:10Z" finished-at="2019-05-02T15:19:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheCookiesTextIsPresent -->
+        <test-method status="PASS" signature="GotTheUserGeneralConditionsPage()[pri:19, instance:Peugeot.ProdHomePageComponentsPeugeotSpainTest@2eda0940]" name="GotTheUserGeneralConditionsPage" duration-ms="3452" started-at="2019-05-02T15:19:17Z" finished-at="2019-05-02T15:19:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotTheUserGeneralConditionsPage -->
+        <test-method status="PASS" signature="GotTheCookiesPopUp()[pri:21, instance:Peugeot.ProdHomePageComponentsPeugeotSpainTest@2eda0940]" name="GotTheCookiesPopUp" duration-ms="3754" started-at="2019-05-02T15:19:36Z" finished-at="2019-05-02T15:19:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotTheCookiesPopUp -->
+      </class> <!-- Peugeot.ProdHomePageComponentsPeugeotSpainTest -->
+    </test> <!-- HomePageComponents -->
+  </suite> <!-- TestAllHome -->
 </testng-results>

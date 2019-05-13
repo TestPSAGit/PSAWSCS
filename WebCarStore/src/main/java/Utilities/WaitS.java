@@ -1,7 +1,7 @@
 /*
  * Creation : 19 mars 2019
  */
-package Methodes;
+package Utilities;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

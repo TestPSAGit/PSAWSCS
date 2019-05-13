@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
-import Methodes.WaitS;
+import Utilities.WaitS;
 
 public class HomePagePE {
     static String[] modelsList;

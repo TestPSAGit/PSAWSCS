@@ -1,7 +1,7 @@
 /*
  * Creation : 24 avr. 2019
  */
-package Methodes;
+package Utilities;
 
 import java.time.LocalDate;
 import java.util.Date;

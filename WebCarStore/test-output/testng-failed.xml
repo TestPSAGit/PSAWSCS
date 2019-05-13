@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite thread-count="1" name="Failed suite [TestAllHome]" parallel="methods">
+  <test thread-count="1" name="HomePageComponents(failed)" parallel="methods">
     <classes>
-      <class name="Peugeot.ProdResultPagePeugeotFranceTest">
+      <class name="Peugeot.ProdHomePageComponentsPeugeotBelgiumFRTest">
         <methods>
-          <include name="TheNumberOfOffersISGreaterWhenAddingAModel"/>
+          <include name="GotTheCookiesPopUp"/>
+          <include name="TheTextUnderThePageTitleIsCorrect"/>
           <include name="BeforeTest"/>
+          <include name="AfterTest"/>
         </methods>
-      </class> <!-- Peugeot.ProdResultPagePeugeotFranceTest -->
+      </class> <!-- Peugeot.ProdHomePageComponentsPeugeotBelgiumFRTest -->
+      <class name="Peugeot.ProdHomePageComponentsPeugeotBelgiumNLTest">
+        <methods>
+          <include name="BeforeTest"/>
+          <include name="GotToHomePageWhenClickingOnThePeugeotLogo"/>
+          <include name="AfterTest"/>
+        </methods>
+      </class> <!-- Peugeot.ProdHomePageComponentsPeugeotBelgiumNLTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- HomePageComponents(failed) -->
+</suite> <!-- Failed suite [TestAllHome] -->

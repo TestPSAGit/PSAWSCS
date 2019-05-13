@@ -7,22 +7,22 @@ import java.util.Date;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import Methodes.WaitS;
+import Utilities.WaitS;
 
 public class TestFunctions {
     static WebDriver driver;
     static Date DeliveryDate;
     static Date currentDate;
 
-    @BeforeSuite
+    @BeforeMethod
     public void BeforeTest() {
 
         driver = InitialiseDrivers.InitialiseChromDriver();
         driver.get(
-                "http://fr.store.peugeot.inetpsa.com/Recherche-par-critere?lat=48.856614&lng=2.3522219000000177&LocationL=Paris%2C%20France&etd=0&mbd=1PIAS0000030;");
+                "http://fr.store.peugeot.inetpsa.com/Recherche-par-critere?lat=48.856614&lng=2.3522219000000177&LocationL=Paris%2C%20France&etd=0");
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
         driver.findElement(By.className("psac_noselect")).click();
@@ -31,20 +31,18 @@ public class TestFunctions {
 
     @Test
 
-    public void TheListOfModels() {
+    public void Thedels() {
+        ResultPage.OpenTheModelsMenu(driver);
+        ResultPage.SelectaModelFromTheModelsList(driver, 5);
+        WaitS.WaitForElementToBeVisible(driver, "/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[4]/div[1]/label[1]/i[1]");
+        String[] Energies = ResultPage.GetTheEnergiesList(driver);
 
-        String[] Models = ResultPage.GetTheModelsListElements(driver);
-        driver.findElement(By.xpath("//*[@id=\"filter-form\"]/div[1]/div/div/button")).click();
-        for (int i = 1; i < Models.length + 1; i++) {
+        for (int i = 1; i >= Energies.length; i++) {
+            ResultPage.ClickOnOneEnergy(driver, Energies[i]);
+            ResultPage.GetOffersNumber(driver);
 
-            driver.findElement(By.xpath("//*[@id=\"filter-form\"]/div[1]/div/div/button")).click();
-            WaitS.WaitForElementToBeVisible(driver,
-                    "/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/ul[1]/li[" + i + "]/a[1]/label[1]");
-            ResultPage.SelectaModelFromTheModelsList(driver, i);
-            System.out.println(Models[i - 1].toLowerCase());
-
-            WaitS.Wait(3000);
         }
+
     }
 
 }

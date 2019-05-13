@@ -9,9 +9,10 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
-import Methodes.DateManagement;
-import Methodes.WaitS;
+import Utilities.DateManagement;
+import Utilities.WaitS;
 
 public class ResultPage {
 
@@ -19,6 +20,7 @@ public class ResultPage {
     static WebDriver driver;
 
     static String[] modelsList;
+    static String[] energyList;
 
     static int GetOffersNumber(WebDriver driver) {
 
@@ -73,6 +75,34 @@ public class ResultPage {
 
     static void SelectaModelFromTheModelsList(WebDriver driver, int i) {
         driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/ul[1]/li[" + i + "]/a[1]/label[1]")).click();
+
+    }
+
+    static void MovePriceSliderToLowerValue(WebDriver driver) {
+        WebElement PriceSlider = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[3]/div[1]/div[1]/a[2]/div[1]"));
+        Actions action = new Actions(driver);
+        action.clickAndHold(PriceSlider);
+        action.moveByOffset(-100, 0);
+        action.release();
+        action.build().perform();
+        WaitS.Wait(1000);
+    }
+
+    static void OpenTheModelsMenu(WebDriver driver) {
+        driver.findElement(By.xpath("//*[@id=\"filter-form\"]/div[1]/div/div/button")).click();
+    }
+
+    static String[] GetTheEnergiesList(WebDriver driver) {
+
+        List<WebElement> List = driver.findElements(By.xpath("//div[@class='control-group appeared']"));
+        String Energy = List.get(0).getText();
+        String EnergyList[] = Energy.split("\n");
+        return EnergyList;
+
+    }
+
+    static void ClickOnOneEnergy(WebDriver driver, String Energy) {
+        driver.findElement(By.xpath("//label[contains(text(),'" + Energy + "')]")).click();
 
     }
 

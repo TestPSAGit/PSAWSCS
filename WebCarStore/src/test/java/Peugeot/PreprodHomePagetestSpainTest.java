@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import Methodes.WaitS;
+import Utilities.WaitS;
 
 public class PreprodHomePagetestSpainTest {
     static WebDriver driver;

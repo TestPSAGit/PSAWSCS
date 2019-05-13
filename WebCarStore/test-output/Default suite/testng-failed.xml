@@ -5,7 +5,7 @@
     <classes>
       <class name="Peugeot.ProdResultPagePeugeotFranceTest">
         <methods>
-          <include name="TheNumberOfOffersISGreaterWhenAddingAModel"/>
+          <include name="Thedels"/>
           <include name="BeforeTest"/>
         </methods>
       </class> <!-- Peugeot.ProdResultPagePeugeotFranceTest -->
