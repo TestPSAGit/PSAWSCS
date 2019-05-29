@@ -3,21 +3,52 @@
 <suite thread-count="1" name="Failed suite [TestAllHome]" parallel="methods">
   <test thread-count="1" name="HomePageComponents(failed)" parallel="methods">
     <classes>
-      <class name="Peugeot.ProdHomePageComponentsPeugeotBelgiumFRTest">
+      <class name="DS.HPCompItTest">
         <methods>
-          <include name="GotTheCookiesPopUp"/>
+          <include name="GotTheUserGeneralConditionsPage"/>
+          <include name="AfterTest"/>
+          <include name="GotFacebookPageWhenClickingTheFacebookIcone"/>
+          <include name="BeforeTest"/>
+        </methods>
+      </class> <!-- DS.HPCompItTest -->
+      <class name="DS.HPCompESTest">
+        <methods>
+          <include name="GotTheUserGeneralConditionsPage"/>
+          <include name="BeforeTest"/>
+          <include name="GotFacebookPageWhenClickingTheFacebookIcone"/>
+          <include name="AfterTest"/>
+        </methods>
+      </class> <!-- DS.HPCompESTest -->
+      <class name="Peugeot.HPCompBeFrTest">
+        <methods>
           <include name="TheTextUnderThePageTitleIsCorrect"/>
-          <include name="BeforeTest"/>
+          <include name="GotTheCookiesPopUp"/>
           <include name="AfterTest"/>
+          <include name="BeforeTest"/>
         </methods>
-      </class> <!-- Peugeot.ProdHomePageComponentsPeugeotBelgiumFRTest -->
-      <class name="Peugeot.ProdHomePageComponentsPeugeotBelgiumNLTest">
+      </class> <!-- Peugeot.HPCompBeFrTest -->
+      <class name="Peugeot.HPCompBeNlTest">
         <methods>
-          <include name="BeforeTest"/>
           <include name="GotToHomePageWhenClickingOnThePeugeotLogo"/>
+          <include name="BeforeTest"/>
           <include name="AfterTest"/>
         </methods>
-      </class> <!-- Peugeot.ProdHomePageComponentsPeugeotBelgiumNLTest -->
+      </class> <!-- Peugeot.HPCompBeNlTest -->
+      <class name="Citroën.HPCompESTest">
+        <methods>
+          <include name="GotFacebookPageWhenClickingTheFacebookIcone"/>
+          <include name="AfterTest"/>
+          <include name="BeforeTest"/>
+        </methods>
+      </class> <!-- Citroën.HPCompESTest -->
+      <class name="Citroën.HPCompItTest">
+        <methods>
+          <include name="GotTwiterPageWhenClickingTheTwiterIcone"/>
+          <include name="BeforeTest"/>
+          <include name="GotFacebookPageWhenClickingTheFacebookIcone"/>
+          <include name="AfterTest"/>
+        </methods>
+      </class> <!-- Citroën.HPCompItTest -->
     </classes>
   </test> <!-- HomePageComponents(failed) -->
 </suite> <!-- Failed suite [TestAllHome] -->

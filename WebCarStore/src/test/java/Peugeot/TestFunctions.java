@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import Utilities.InitialiseDrivers;
 import Utilities.WaitS;
 
 public class TestFunctions {
@@ -32,14 +33,14 @@ public class TestFunctions {
     @Test
 
     public void Thedels() {
-        ResultPage.OpenTheModelsMenu(driver);
-        ResultPage.SelectaModelFromTheModelsList(driver, 5);
+        ResultPageAP.OpenTheModelsMenu(driver);
+        ResultPageAP.SelectaModelFromTheModelsList(driver, 5);
         WaitS.WaitForElementToBeVisible(driver, "/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[4]/div[1]/label[1]/i[1]");
-        String[] Energies = ResultPage.GetTheEnergiesList(driver);
+        String[] Energies = ResultPageAP.GetTheEnergiesList(driver);
 
         for (int i = 1; i >= Energies.length; i++) {
-            ResultPage.ClickOnOneEnergy(driver, Energies[i]);
-            ResultPage.GetOffersNumber(driver);
+            // ResultPageAP.ClickOnOneEnergy(driver, Energies[i]);
+            ResultPageAP.GetOffersNumber(driver);
 
         }
 

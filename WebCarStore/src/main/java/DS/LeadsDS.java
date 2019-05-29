@@ -28,7 +28,7 @@ public class LeadsDS {
         driver.findElement(By.id("txtLastname")).sendKeys("test");
         driver.findElement(By.id("txtFirstname")).sendKeys("test");
         driver.findElement(By.id("txtPostalCode")).sendKeys("23443");
-        driver.findElement(By.id("txtEmail")).sendKeys("mohammed.filali@ext.mpsa.com");
+        driver.findElement(By.id("txtEmail")).sendKeys("psaleadstest@gmail.com");
         driver.findElement(By.id("txtPhone")).sendKeys("0666666666");
         driver.findElement(By.id("txtComments")).sendKeys("this is a test for spain");
         WebElement Loca = driver.findElement(By.name("address"));
@@ -50,7 +50,7 @@ public class LeadsDS {
         driver.findElement(By.id("txtEmail")).sendKeys("psaleadstest@gmail.com");
         driver.findElement(By.id("txtPhone")).sendKeys("0666666666");
         driver.findElement(By.id("txtComments")).sendKeys("this is a test for Italy");
-        driver.findElement(By.xpath("//p[7]//label[2]//span[1]")).click();
+        driver.findElement(By.xpath("//p[7]//label[1]//span[1]")).click();
         driver.findElement(By.xpath("//p[@class='form-line control-group radiobutton-list no-bg']//label[3]//span[1]")).click();
     }
 
@@ -60,7 +60,7 @@ public class LeadsDS {
         driver.findElement(By.id("txtFirstname")).sendKeys("test");
         driver.findElement(By.id("txtCity")).sendKeys("test");
         driver.findElement(By.id("txtEmail")).sendKeys("psaleadstest@gmail.com");
-        driver.findElement(By.id("txtPhone")).sendKeys("0666666666");
+        // driver.findElement(By.id("txtPhone")).sendKeys("0666666666");
         driver.findElement(By.id("txtComments")).sendKeys("this is a test for Belgium FR");
         WebElement Loca = driver.findElement(By.name("address"));
         Loca.sendKeys("Bruxelles");
@@ -79,7 +79,7 @@ public class LeadsDS {
         driver.findElement(By.id("txtFirstname")).sendKeys("test");
         driver.findElement(By.id("txtCity")).sendKeys("test");
         driver.findElement(By.id("txtEmail")).sendKeys("psaleadstest@gmail.com");
-        driver.findElement(By.id("txtPhone")).sendKeys("0666666666");
+        // driver.findElement(By.id("txtPhone")).sendKeys("0666666666");
         driver.findElement(By.id("txtComments")).sendKeys("this is a test for Belgium FR");
         WebElement Loca = driver.findElement(By.name("address"));
         Loca.sendKeys("Bruxelles");
