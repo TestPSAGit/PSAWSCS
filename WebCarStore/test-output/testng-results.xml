@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="56853" started-at="2019-05-29T08:45:31Z" finished-at="2019-05-29T08:46:28Z">
+  <suite name="Default suite" duration-ms="53843" started-at="2019-05-29T09:13:42Z" finished-at="2019-05-29T09:14:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="56853" started-at="2019-05-29T08:45:31Z" finished-at="2019-05-29T08:46:28Z">
+    <test name="Default test" duration-ms="53843" started-at="2019-05-29T09:13:42Z" finished-at="2019-05-29T09:14:36Z">
       <class name="Peugeot.ProductPageTest">
-        <test-method status="PASS" signature="ThePriceInTheProductPageIsEqualToThePriceInThePopoup(java.lang.String)[pri:1, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePriceInTheProductPageIsEqualToThePriceInThePopoup" duration-ms="22649" started-at="2019-05-29T08:45:31Z" data-provider="UrlsProvider" finished-at="2019-05-29T08:45:54Z">
+        <test-method status="PASS" signature="ThePriceInTheProductPageIsEqualToThePriceInThePopoup(java.lang.String)[pri:1, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePriceInTheProductPageIsEqualToThePriceInThePopoup" duration-ms="17857" started-at="2019-05-29T09:13:42Z" data-provider="UrlsProvider" finished-at="2019-05-29T09:14:00Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ThePriceInTheProductPageIsEqualToThePriceInThePopoup -->
-        <test-method status="PASS" signature="ThePriceInTheProductPageIsEqualToThePriceInThePopoup(java.lang.String)[pri:1, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePriceInTheProductPageIsEqualToThePriceInThePopoup" duration-ms="30617" started-at="2019-05-29T08:45:54Z" data-provider="UrlsProvider" finished-at="2019-05-29T08:46:24Z">
+        <test-method status="PASS" signature="ThePriceInTheProductPageIsEqualToThePriceInThePopoup(java.lang.String)[pri:1, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePriceInTheProductPageIsEqualToThePriceInThePopoup" duration-ms="29469" started-at="2019-05-29T09:14:00Z" data-provider="UrlsProvider" finished-at="2019-05-29T09:14:30Z">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ThePriceInTheProductPageIsEqualToThePriceInThePopoup -->
-        <test-method status="PASS" signature="ThePriceeforeOptionsIsLowerThanTheTTCPrice(java.lang.String)[pri:2, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePriceeforeOptionsIsLowerThanTheTTCPrice" duration-ms="1024" started-at="2019-05-29T08:46:24Z" data-provider="UrlsProvider" finished-at="2019-05-29T08:46:25Z">
+        <test-method status="PASS" signature="ThePriceeforeOptionsIsLowerThanTheTTCPrice(java.lang.String)[pri:2, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePriceeforeOptionsIsLowerThanTheTTCPrice" duration-ms="1221" started-at="2019-05-29T09:14:30Z" data-provider="UrlsProvider" finished-at="2019-05-29T09:14:31Z">
           <params>
             <param index="0">
               <value>
@@ -40,7 +40,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ThePriceeforeOptionsIsLowerThanTheTTCPrice -->
-        <test-method status="PASS" signature="ThePriceeforeOptionsIsLowerThanTheTTCPrice(java.lang.String)[pri:2, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePriceeforeOptionsIsLowerThanTheTTCPrice" duration-ms="967" started-at="2019-05-29T08:46:25Z" data-provider="UrlsProvider" finished-at="2019-05-29T08:46:26Z">
+        <test-method status="PASS" signature="ThePriceeforeOptionsIsLowerThanTheTTCPrice(java.lang.String)[pri:2, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePriceeforeOptionsIsLowerThanTheTTCPrice" duration-ms="1013" started-at="2019-05-29T09:14:31Z" data-provider="UrlsProvider" finished-at="2019-05-29T09:14:32Z">
           <params>
             <param index="0">
               <value>
@@ -51,7 +51,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ThePriceeforeOptionsIsLowerThanTheTTCPrice -->
-        <test-method status="PASS" signature="ThePopupPriceDetailsCanBeOpened(java.lang.String)[pri:3, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePopupPriceDetailsCanBeOpened" duration-ms="337" started-at="2019-05-29T08:46:26Z" data-provider="UrlsProvider" finished-at="2019-05-29T08:46:27Z">
+        <test-method status="PASS" signature="ThePopupPriceDetailsCanBeOpened(java.lang.String)[pri:3, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePopupPriceDetailsCanBeOpened" duration-ms="441" started-at="2019-05-29T09:14:32Z" data-provider="UrlsProvider" finished-at="2019-05-29T09:14:32Z">
           <params>
             <param index="0">
               <value>
@@ -62,7 +62,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ThePopupPriceDetailsCanBeOpened -->
-        <test-method status="PASS" signature="ThePopupPriceDetailsCanBeOpened(java.lang.String)[pri:3, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePopupPriceDetailsCanBeOpened" duration-ms="412" started-at="2019-05-29T08:46:27Z" data-provider="UrlsProvider" finished-at="2019-05-29T08:46:27Z">
+        <test-method status="PASS" signature="ThePopupPriceDetailsCanBeOpened(java.lang.String)[pri:3, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePopupPriceDetailsCanBeOpened" duration-ms="485" started-at="2019-05-29T09:14:32Z" data-provider="UrlsProvider" finished-at="2019-05-29T09:14:33Z">
           <params>
             <param index="0">
               <value>
@@ -73,7 +73,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ThePopupPriceDetailsCanBeOpened -->
-        <test-method status="PASS" signature="ThePopupPriceDetailsCanBeClosed(java.lang.String)[pri:4, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePopupPriceDetailsCanBeClosed" duration-ms="389" started-at="2019-05-29T08:46:27Z" data-provider="UrlsProvider" finished-at="2019-05-29T08:46:27Z">
+        <test-method status="PASS" signature="ThePopupPriceDetailsCanBeClosed(java.lang.String)[pri:4, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePopupPriceDetailsCanBeClosed" duration-ms="507" started-at="2019-05-29T09:14:33Z" data-provider="UrlsProvider" finished-at="2019-05-29T09:14:33Z">
           <params>
             <param index="0">
               <value>
@@ -84,7 +84,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ThePopupPriceDetailsCanBeClosed -->
-        <test-method status="PASS" signature="ThePopupPriceDetailsCanBeClosed(java.lang.String)[pri:4, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePopupPriceDetailsCanBeClosed" duration-ms="382" started-at="2019-05-29T08:46:27Z" data-provider="UrlsProvider" finished-at="2019-05-29T08:46:28Z">
+        <test-method status="PASS" signature="ThePopupPriceDetailsCanBeClosed(java.lang.String)[pri:4, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePopupPriceDetailsCanBeClosed" duration-ms="544" started-at="2019-05-29T09:14:33Z" data-provider="UrlsProvider" finished-at="2019-05-29T09:14:34Z">
           <params>
             <param index="0">
               <value>
@@ -95,6 +95,50 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ThePopupPriceDetailsCanBeClosed -->
+        <test-method status="PASS" signature="ThePriceEstimationCanBeOpened(java.lang.String)[pri:5, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePriceEstimationCanBeOpened" duration-ms="791" started-at="2019-05-29T09:14:34Z" data-provider="UrlsProvider" finished-at="2019-05-29T09:14:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://fr.store.peugeot.inetpsa.com/Recherche-par-critere?lat=48.856614&lng=2.3522219000000177&LocationL=Paris%2C%20France&etd=0&mbd=1PT9S0000030]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ThePriceEstimationCanBeOpened -->
+        <test-method status="PASS" signature="ThePriceEstimationCanBeOpened(java.lang.String)[pri:5, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePriceEstimationCanBeOpened" duration-ms="518" started-at="2019-05-29T09:14:35Z" data-provider="UrlsProvider" finished-at="2019-05-29T09:14:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://fr.store.peugeot.inetpsa.com/Recherche-par-critere?lat=48.856614&lng=2.3522219000000177&LocationL=Paris%2C%20France&etd=0&mbd=1PP7S0000146]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ThePriceEstimationCanBeOpened -->
+        <test-method status="PASS" signature="ThePriceEstimationCanBeClosed(java.lang.String)[pri:6, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePriceEstimationCanBeClosed" duration-ms="435" started-at="2019-05-29T09:14:35Z" data-provider="UrlsProvider" finished-at="2019-05-29T09:14:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://fr.store.peugeot.inetpsa.com/Recherche-par-critere?lat=48.856614&lng=2.3522219000000177&LocationL=Paris%2C%20France&etd=0&mbd=1PT9S0000030]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ThePriceEstimationCanBeClosed -->
+        <test-method status="PASS" signature="ThePriceEstimationCanBeClosed(java.lang.String)[pri:6, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePriceEstimationCanBeClosed" duration-ms="500" started-at="2019-05-29T09:14:36Z" data-provider="UrlsProvider" finished-at="2019-05-29T09:14:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://fr.store.peugeot.inetpsa.com/Recherche-par-critere?lat=48.856614&lng=2.3522219000000177&LocationL=Paris%2C%20France&etd=0&mbd=1PP7S0000146]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ThePriceEstimationCanBeClosed -->
       </class> <!-- Peugeot.ProductPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

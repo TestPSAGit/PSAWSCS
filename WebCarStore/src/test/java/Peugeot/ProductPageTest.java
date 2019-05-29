@@ -91,6 +91,7 @@ public class ProductPageTest {
     }
 
     @Test(dataProvider = "UrlsProvider", priority = 5)
+
     public void ThePriceEstimationCanBeOpened(String URL) {
 
         ProductPage.OpenEstimation(driver);
