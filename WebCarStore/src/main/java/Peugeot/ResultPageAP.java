@@ -64,34 +64,36 @@ public class ResultPageAP {
     }
 
     static String[] GetTheModelsListElements(WebDriver driver) {
-        driver.findElement(By.xpath("//*[@id=\"filter-form\"]/div[1]/div/div/button[1]")).click();
+        driver.findElement(By.xpath("//form[@id='filter-form']/div[1]/div[1]/div[1]/button[1]")).click();
+
         WaitS.Wait(2000);
         List<WebElement> List = driver.findElements(By.xpath("//div[@class='btn-group open']//ul[@class='multiselect-container dropdown-menu']"));
         String Models = List.get(0).getText();
         String ModelsList[] = Models.split("\n");
-        driver.findElement(By.xpath("//*[@id=\"filter-form\"]/div[1]/div/div/button[1]")).click();
+        driver.findElement(By.xpath("//form[@id='filter-form']/div[1]/div[1]/div[1]/button[1]")).click();
         return ModelsList;
 
     }
 
     static String[] GetTheGearBoxListElements(WebDriver driver) {
-        driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[5]/div[1]/div[1]/button[1]")).click();
+        driver.findElement(By.xpath("//*[@id=\"filter-form\"]/div[5]/div/div")).click();
+
         WaitS.Wait(2000);
         List<WebElement> List = driver.findElements(By.xpath("//div[@class='btn-group open']"));
         String Models = List.get(0).getText();
         String ModelsList[] = Models.split("\n");
-        driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[5]/div[1]/div[1]/button[1]")).click();
+        driver.findElement(By.xpath("//*[@id=\"filter-form\"]/div[5]/div/div")).click();
         return ModelsList;
 
     }
 
     static String[] GetTheEngineListElements(WebDriver driver) {
-        driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[6]/div[1]/div[1]/button[1]")).click();
+        driver.findElement(By.xpath("//*[@id=\"filter-form\"]/div[6]/div/div")).click();
         WaitS.Wait(2000);
         List<WebElement> List = driver.findElements(By.xpath("//div[@class='btn-group open']//ul[@class='multiselect-container dropdown-menu']"));
         String Models = List.get(0).getText();
         String ModelsList[] = Models.split("\n");
-        driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[6]/div[1]/div[1]/button[1]")).click();
+        driver.findElement(By.xpath("//*[@id=\"filter-form\"]/div[6]/div/div")).click();
         return ModelsList;
 
     }
@@ -108,26 +110,26 @@ public class ResultPageAP {
     }
 
     static String[] GetTheFinitionListElements(WebDriver driver) {
-        driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[7]/div[1]/div[1]/button[1]")).click();
+        driver.findElement(By.xpath("//*[@id=\"filter-form\"]/div[7]/div/div")).click();
         WaitS.Wait(2000);
         List<WebElement> List = driver.findElements(By.xpath("//div[@class='btn-group open']//ul[@class='multiselect-container dropdown-menu']"));
         String Models = List.get(0).getText();
         String ModelsList[] = Models.split("\n");
-        driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[7]/div[1]/div[1]/button[1]")).click();
+        driver.findElement(By.xpath("//*[@id=\"filter-form\"]/div[7]/div/div")).click();
         return ModelsList;
 
     }
 
     static String[] GetTheColorListElements(WebDriver driver) {
 
-        List<WebElement> elementsRoot = driver.findElements(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[8]/div"));
+        List<WebElement> elementsRoot = driver.findElements(By.xpath("//*[@id=\"filter-form\"]/div[8]/div/div"));
 
         System.out.println("///////////");
 
         System.out.println(elementsRoot.get(0).getText());
 
-        WaitS.WaitForElementToBeVisible(driver, "/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[8]/div[1]");
-        List<WebElement> List = driver.findElements(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[8]/div[1]"));
+        // WaitS.WaitForElementToBeVisible(driver, "//*[@id=\"filter-form\"]/div[8]/div/div");
+        List<WebElement> List = driver.findElements(By.xpath("//*[@id=\"filter-form\"]/div[8]/div/div"));
         String Color = List.get(0).getText();
 
         String ColorList[] = Color.split("\n");
@@ -138,30 +140,33 @@ public class ResultPageAP {
     }
 
     static void SelectaModelFromTheModelsList(WebDriver driver, int i) {
-        WaitS.WaitForElementToBeVisible(driver,
-                "/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/ul[1]/li[" + i + "]/a[1]/label[1]");
-        driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/ul[1]/li[" + i + "]/a[1]/label[1]")).click();
+        driver.findElement(By.xpath("//div[@class='btn-group open']//ul[@class='multiselect-container dropdown-menu']/li[" + i + "]")).click();
+        WaitS.Wait(1000);
 
     }
 
     static void SelectaGearBoxFromTheGearBoxsList(WebDriver driver, int i) {
-        driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[5]/div[1]/div[1]/ul[1]/li[" + i + "]/a[1]/label[1]")).click();
+        driver.findElement(By.xpath("//div[@class='btn-group open']//ul[@class='multiselect-container dropdown-menu']/li[" + i + "]")).click();
+        WaitS.Wait(1000);
 
     }
 
     static void SelectaEngineFromTheEngineList(WebDriver driver, int i) {
-        driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[6]/div[1]/div[1]/ul[1]/li[" + i + "]/a[1]/label[1]/input[1]"))
-                .click();
+        driver.findElement(By.xpath("//div[@class='btn-group open']//ul[@class='multiselect-container dropdown-menu']/li[" + i + "]")).click();
+        WaitS.Wait(1000);
 
     }
 
     static void SelectaFinitionFromTheFinitionList(WebDriver driver, int i) {
-        driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[7]/div[1]/div[1]/ul[1]/li[" + i + "]/a[1]/label[1]")).click();
+
+        driver.findElement(By.xpath("//div[@class='btn-group open']//ul[@class='multiselect-container dropdown-menu']/li[" + i + "]")).click();
+        WaitS.Wait(1000);
 
     }
 
     static void SelectaColorFromTheColorList(WebDriver driver, int i) {
-        driver.findElement(By.xpath("//div[@class='control-group color-choice']/div[1]/label[1]")).click();
+        driver.findElement(By.xpath("//div[@class='btn-group open']//ul[@class='multiselect-container dropdown-menu']/li[" + i + "]")).click();
+        WaitS.Wait(1000);
 
     }
 
@@ -176,23 +181,25 @@ public class ResultPageAP {
     }
 
     static void OpenTheModelsMenu(WebDriver driver) {
-        WaitS.WaitForElementToBeVisible(driver, "/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/button[1]");
-        driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/button[1]")).click();
+        driver.findElement(By.xpath("//form[@id='filter-form']/div[1]/div[1]/div[1]/button[1]")).click();
+        WaitS.Wait(2000);
+
     }
 
     static void OpenTheGearBoxMenu(WebDriver driver) {
-        WaitS.WaitForElementToBeVisible(driver, "/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[5]/div[1]/div[1]/button[1]");
-        driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[5]/div[1]/div[1]/button[1]")).click();
+        driver.findElement(By.xpath("//form[@id='filter-form']/div[5]/div[1]/div[1]/button[1]")).click();
+        WaitS.Wait(2000);
+
     }
 
     static void OpenTheEngineMenu(WebDriver driver) {
-        WaitS.WaitForElementToBeVisible(driver, "/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[6]/div[1]/div[1]/button[1]");
-        driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[6]/div[1]/div[1]/button[1]")).click();
+        driver.findElement(By.xpath("//form[@id='filter-form']/div[6]/div[1]/div[1]/button[1]")).click();
+        WaitS.Wait(2000);
     }
 
     static void OpenTheFinitionMenu(WebDriver driver) {
-        WaitS.WaitForElementToBeVisible(driver, "/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[7]/div[1]/div[1]/button[1]");
-        driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[7]/div[1]/div[1]/button[1]")).click();
+        driver.findElement(By.xpath("//form[@id='filter-form']/div[7]/div[1]/div[1]/button[1]")).click();
+        WaitS.Wait(2000);
     }
 
     static String[] GetTheEnergiesList(WebDriver driver) {
@@ -206,7 +213,7 @@ public class ResultPageAP {
 
     static void ClickOnOneEnergy(WebDriver driver, int Label, int div) {
         driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[4]/div[" + div + "]/label[" + Label + "]")).click();
-
+        WaitS.Wait(2000);
     }
 
 }

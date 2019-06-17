@@ -3,12 +3,17 @@
  */
 package Utilities;
 
-import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WaitS {
+
+    static WebDriverWait wait;
+
     public static void Wait(int Dur) {
         try {
             Thread.sleep(Dur);
@@ -18,9 +23,19 @@ public class WaitS {
 
     }
 
-    public static void WaitForElementToBeVisible(WebDriver driver, String Xpath) {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(Xpath)));
+    public static void WaitForElementToBeVisible(WebDriver driver, WebElement WE) {
+        wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.visibilityOf(WE));
 
+    }
+
+    public static void waitForLoad(WebDriver driver) {
+        ExpectedCondition<Boolean> pageLoadCondition = new ExpectedCondition<Boolean>() {
+            public Boolean apply(WebDriver driver) {
+                return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
+            }
+        };
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+        wait.until(pageLoadCondition);
     }
 }

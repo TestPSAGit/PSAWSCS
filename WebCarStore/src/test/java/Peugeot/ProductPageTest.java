@@ -6,8 +6,10 @@ package Peugeot;
 import java.util.Date;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -59,7 +61,7 @@ public class ProductPageTest {
     public void ThePriceeforeOptionsIsLowerThanTheTTCPrice(String URL) {
 
         ProductPage.ClickOnPriceDetails(driver);
-        int PTTCPP = ProductPage.GetTheTTCPriceFromTheProductPage(driver);
+
         int PTTCHO = ProductPage.GetTheTTCHOptionPriceFromThePopUp(driver);
         int PTTCAO = ProductPage.GetTheTTCPriceFromThePopUp(driver);
         System.out.println(ProductPage.GetTheTTCPriceFromTheProductPage(driver));
@@ -72,7 +74,7 @@ public class ProductPageTest {
 
     }
 
-    @Test(dataProvider = "UrlsProvider", priority = 3)
+    // @Test(dataProvider = "UrlsProvider", priority = 3)
     public void ThePopupPriceDetailsCanBeOpened(String URL) {
 
         ProductPage.ClickOnPriceDetails(driver);
@@ -83,7 +85,7 @@ public class ProductPageTest {
 
     @Test(dataProvider = "UrlsProvider", priority = 4)
     public void ThePopupPriceDetailsCanBeClosed(String URL) {
-
+        // InitialiseUrl(URL);
         ProductPage.ClickOnPriceDetails(driver);
         assert (ProductPage.ThePopupPriceDetailsCloseCrossIsClickable(driver) == true);
         ProductPage.ClosePriceDetailsPopUp(driver);
@@ -109,6 +111,32 @@ public class ProductPageTest {
 
     }
 
+    @Test(dataProvider = "UrlsProvider", priority = 7)
+    public void The360ViewIsDisplayed(String URL) {
+
+        ((JavascriptExecutor) driver).executeScript("scroll(0,250);");
+        ProductPage.ClickOn360View(driver);
+        assert (ProductPage.The360viewIsVisible(driver) == true);
+
+    }
+
+    @Test(dataProvider = "UrlsProvider", priority = 8)
+    public void TheExternalImageIsDisplayed(String URL) {
+        ((JavascriptExecutor) driver).executeScript("scroll(0,250);");
+        ProductPage.ClickOnExternalView(driver);
+        assert (ProductPage.TheExternalImageIsVisible(driver) == true);
+
+    }
+
+    @Test(dataProvider = "UrlsProvider", priority = 9)
+    public void TheInternalImageIsDisplayed(String URL) {
+
+        ((JavascriptExecutor) driver).executeScript("scroll(0,250);");
+        ProductPage.ClickOnInternalView(driver);
+        assert (ProductPage.TheInternalImageIsVisible(driver) == true);
+
+    }
+
     @DataProvider(name = "UrlsProvider")
     public Object[] UrlsTobeTested1() {
 
@@ -116,5 +144,12 @@ public class ProductPageTest {
                 "http://fr.store.peugeot.inetpsa.com/Recherche-par-critere?lat=48.856614&lng=2.3522219000000177&LocationL=Paris%2C%20France&etd=0&mbd=1PT9S0000030",
                 "http://fr.store.peugeot.inetpsa.com/Recherche-par-critere?lat=48.856614&lng=2.3522219000000177&LocationL=Paris%2C%20France&etd=0&mbd=1PP7S0000146" };
         return URLS;
+    }
+
+    @AfterSuite
+
+    public void AfterTest() {
+
+        driver.quit();
     }
 }

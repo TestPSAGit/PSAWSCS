@@ -23,7 +23,7 @@ public class LeadsTest {
     public void TheLeadHAvebeenSubmittedForPeugeotFrance() {
 
         driver.get(
-                "http://fr.store.peugeot.inetpsa.com/contactsolv0?lat=48.856614&lng=2.3522219000000177&Cit=Paris%2C%20France&etd=0&mbd=1PB1S0000029;1PB1S0000030;&carNum=R-WB6307&VehListIndex=2%7c241");
+                "http://fr.store.peugeot.inetpsa.com/contactsolv0?lat=48.856614&lng=2.3522219000000177&Cit=Paris%2C%20France&etd=0&mbd=1PI4S0000146;&carNum=R-WC7733&VehListIndex=4%7c454");
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
         driver.findElement(By.className("psac_noselect")).click();
@@ -53,7 +53,7 @@ public class LeadsTest {
     public void TheLeadHAvebeenSubmittedForPeugeotItaly() {
 
         driver.get(
-                "http://it.store.peugeot.inetpsa.com/contactsolv0?lat=41.9027835&lng=12.496365500000024&Cit=Roma%20RM%2C%20Italia&etd=0&mbd=1PI4SSU00000;&carNum=R-759163&VehListIndex=1%7c548");
+                "http://it.store.peugeot.inetpsa.com/contactsolv0?lat=41.9027835&lng=12.496365500000024&Cit=Roma%20RM%2C%20Italia&etd=0&mbd=1PI4SSU00000;&carNum=R-759160&VehListIndex=1%7c561");
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
         // driver.findElement(By.className("psac_noselect")).click();

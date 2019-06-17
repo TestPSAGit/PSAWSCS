@@ -16,7 +16,7 @@ import Utilities.DateManagement;
 import Utilities.InitialiseDrivers;
 import Utilities.WaitS;
 
-public class ResultPageTest {
+public class ResultPageTestLight {
     static WebDriver driver;
     static Date DeliveryDate;
     static Date currentDate;
@@ -48,7 +48,7 @@ public class ResultPageTest {
 
     }
 
-    @Test(dataProvider = "UrlsProvider")
+    @Test(priority = 1, dataProvider = "UrlsProvider1")
     public void CheckThatThedeliveryDateisGreaterThanTodaysDate(String URL) {
         InitialiseUrl(URL);
         String[] Models = ResultPageAP.GetTheModelsListElements(driver);
@@ -59,10 +59,9 @@ public class ResultPageTest {
         // ResultPageAP.OpenTheModelsMenu(driver);
         currentDate = DateManagement.GetCurrentDate();
 
-        for (int i = 1; i <= Models.length; i++) {
+        for (int i = 1; i <= 4; i++) {
             ResultPageAP.OpenTheModelsMenu(driver);
-            WaitS.WaitForElementToBeVisible(driver,
-                    "/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/ul[1]/li[" + i + "]/a[1]/label[1]");
+
             if (i == 1) {
                 ResultPageAP.SelectaModelFromTheModelsList(driver, i);
             } else {
@@ -88,7 +87,7 @@ public class ResultPageTest {
 
     }
 
-    @Test(dataProvider = "UrlsProvider")
+    @Test(priority = 2, dataProvider = "UrlsProvider")
     public void CheckThatTheNumberOfOfferschangesWhenChangingGearBox(String URL) {
         InitialiseUrl(URL);
         String[] GearBoxs = ResultPageAP.GetTheGearBoxListElements(driver);
@@ -101,22 +100,21 @@ public class ResultPageTest {
         // ResultPageAP.OpenTheModelsMenu(driver); currentDate =
         DateManagement.GetCurrentDate();
 
-        for (int i = 1; i < GearBoxs.length; i++)
+        for (int i = 1; i < 4; i++)
 
         {
             ResultPageAP.OpenTheGearBoxMenu(driver);
-            WaitS.WaitForElementToBeVisible(driver, "/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[5]/div[1]/div[1]/ul[1]/li[2]/a[1]/label[1]");
+            WaitS.Wait(2000);
+
             if (i == 1) {
                 ResultPageAP.SelectaGearBoxFromTheGearBoxsList(driver, i);
             } else {
                 ResultPageAP.SelectaGearBoxFromTheGearBoxsList(driver, i - 1);
                 ResultPageAP.OpenTheGearBoxMenu(driver);
-                WaitS.WaitForElementToBeVisible(driver,
-                        "/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[5]/div[1]/div[1]/ul[1]/li[2]/a[1]/label[1]");
                 ResultPageAP.SelectaGearBoxFromTheGearBoxsList(driver, i);
             }
 
-            WaitS.Wait(2000);
+            WaitS.Wait(3000);
             OffersNum[i] = ResultPageAP.GetOffersNumber(driver);
 
             if (OffersNum[i] == OffersNum[i - 1]) {
@@ -131,30 +129,21 @@ public class ResultPageTest {
 
     }
 
-    @Test(dataProvider = "UrlsProvider")
+    @Test(priority = 3, dataProvider = "UrlsProvider")
     public void CheckThatTheNumberOfOfferschangesWhenChangingEngine(String URL) {
         InitialiseUrl(URL);
-
         String[] Engines = ResultPageAP.GetTheEngineListElements(driver);
-
         OffersNum = new int[Engines.length];
         OffersNum[0] = 0;
         Error = 0;
-        // ResultPageAP.OpenTheModelsMenu(driver); currentDate =
         DateManagement.GetCurrentDate();
-
-        for (int i = 1; i < Engines.length; i++)
-
-        {
+        for (int i = 1; i < 4; i++) {
             ResultPageAP.OpenTheEngineMenu(driver);
-            WaitS.WaitForElementToBeVisible(driver, "/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[6]/div[1]/div[1]/ul[1]/li[2]/a[1]/label[5]");
             if (i == 1) {
                 ResultPageAP.SelectaEngineFromTheEngineList(driver, i);
             } else {
                 ResultPageAP.SelectaEngineFromTheEngineList(driver, i - 1);
-                WaitS.Wait(1000);
                 ResultPageAP.OpenTheEngineMenu(driver);
-                WaitS.Wait(1000);
                 ResultPageAP.SelectaEngineFromTheEngineList(driver, i);
             }
 
@@ -167,50 +156,36 @@ public class ResultPageTest {
             }
 
         }
-
-        // driver.close();
+        driver.close();
         assert (Error == 0);
 
     }
 
-    @Test(dataProvider = "UrlsProvider")
+    @Test(priority = 4, dataProvider = "UrlsProvider")
     public void CheckThatTheNumberOfOfferschangesWhenChangingFinition(String URL) {
         InitialiseUrl(URL);
 
-        String[] Test = ResultPageAP.GetTheMenuElements(driver);
-        System.out.println(Test[0]);
         String[] Finitions = ResultPageAP.GetTheFinitionListElements(driver);
 
         OffersNum = new int[Finitions.length];
         OffersNum[0] = 0;
         Error = 0;
-        // ResultPageAP.OpenTheModelsMenu(driver); currentDate =
-        DateManagement.GetCurrentDate();
 
-        for (int i = 1; i < Finitions.length; i++)
-
-        {
-            System.out.println(Finitions[i]);
+        for (int i = 1; i < 4; i++) {
             ResultPageAP.OpenTheFinitionMenu(driver);
-            WaitS.WaitForElementToBeVisible(driver, "/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[7]/div[1]/div[1]/ul[1]/li[5]/a[1]/label[5]");
             if (i == 1) {
                 ResultPageAP.SelectaFinitionFromTheFinitionList(driver, i);
             } else {
                 ResultPageAP.SelectaFinitionFromTheFinitionList(driver, i - 1);
-                WaitS.Wait(2000);
                 ResultPageAP.OpenTheFinitionMenu(driver);
-                WaitS.Wait(1000);
                 ResultPageAP.SelectaFinitionFromTheFinitionList(driver, i);
             }
-
-            WaitS.Wait(2000);
+            WaitS.Wait(3000);
             OffersNum[i] = ResultPageAP.GetOffersNumber(driver);
-
             if (OffersNum[i] == OffersNum[i - 1] && OffersNum[i] > 5) {
                 Error++;
                 System.err.println(Finitions[i]);
             }
-
         }
 
         driver.close();
@@ -218,7 +193,7 @@ public class ResultPageTest {
 
     }
 
-    @Test(dataProvider = "UrlsProvider")
+    // @Test(dataProvider = "UrlsProvider")
     public void CheckThatTheNumberOfOfferschangesWhenChangingTheColor(String URL) {
         InitialiseUrl(URL);
         String[] Colors = ResultPageAP.GetTheColorListElements(driver);
@@ -256,7 +231,7 @@ public class ResultPageTest {
 
     }
 
-    @Test(dataProvider = "UrlsProvider")
+    @Test(priority = 5, dataProvider = "UrlsProvider")
     public void TheNumberOfOffersISGreaterWhenAddingAModel(String URL) {
         InitialiseUrl(URL);
         String[] Models = ResultPageAP.GetTheModelsListElements(driver);
@@ -267,7 +242,7 @@ public class ResultPageTest {
 
         // ResultPageAP.OpenTheModelsMenu(driver);
 
-        for (int i = 1; i <= Models.length; i++) {
+        for (int i = 1; i <= 6; i++) {
 
             ResultPageAP.OpenTheModelsMenu(driver);
 
@@ -285,7 +260,7 @@ public class ResultPageTest {
         assert (Error == 0);
     }
 
-    @Test(dataProvider = "UrlsProvider")
+    @Test(priority = 6, dataProvider = "UrlsProvider")
     public void TheNumberOfOffersIsLowerWhenChangingThePriceSlider(String URL) {
         InitialiseUrl(URL);
         ResultPageAP.OpenTheModelsMenu(driver);
@@ -303,17 +278,16 @@ public class ResultPageTest {
 
     }
 
-    @Test(dataProvider = "UrlsProvider")
+    @Test(priority = 7, dataProvider = "UrlsProvider")
 
     public void TheNumberOfOffersIsCorrectWhenChangingTheEnergy(String URL) {
         InitialiseUrl(URL);
         Error = 0;
         String[] Models = ResultPageAP.GetTheModelsListElements(driver);
-        for (int i = 0; i < Models.length; i++) {
+        for (int i = 0; i < 6; i++) {
             ResultPageAP.OpenTheModelsMenu(driver);
             ResultPageAP.SelectaModelFromTheModelsList(driver, i + 1);
 
-            WaitS.WaitForElementToBeVisible(driver, "/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[4]/div[1]/label[1]");
             String[] Energies = ResultPageAP.GetTheEnergiesList(driver);
             OffersNum = new int[Energies.length];
 
@@ -326,11 +300,8 @@ public class ResultPageTest {
                     Error++;
                     System.err.println(Models[i] + " / " + Energies[1]);
                 }
-                WaitS.WaitForElementToBeVisible(driver, "/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[4]/div[1]/label[1]");
                 ResultPageAP.ClickOnOneEnergy(driver, 1, 1);
-                WaitS.WaitForElementToBeVisible(driver, "/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[4]/div[1]/label[1]");
                 ResultPageAP.ClickOnOneEnergy(driver, 2, 1);
-                WaitS.WaitForElementToBeVisible(driver, "/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[4]/div[1]/label[1]");
                 OffersNum[2] = ResultPageAP.GetOffersNumber(driver);
                 if (OffersNum[2] != OffersNum[0] - OffersNum[1]) {
                     Error++;
@@ -347,9 +318,8 @@ public class ResultPageTest {
                     Error++;
                     System.err.println(Models[i] + " / " + Energies[1]);
                 }
-                WaitS.WaitForElementToBeVisible(driver, "/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[4]/div[1]/label[1]");
+
                 ResultPageAP.ClickOnOneEnergy(driver, 1, 1);
-                WaitS.WaitForElementToBeVisible(driver, "/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[4]/div[1]/label[1]");
                 ResultPageAP.ClickOnOneEnergy(driver, 2, 1);
                 OffersNum[2] = ResultPageAP.GetOffersNumber(driver);
 
@@ -358,9 +328,7 @@ public class ResultPageTest {
                     System.err.println(Models[i] + " / " + Energies[2]);
                 }
 
-                WaitS.WaitForElementToBeVisible(driver, "/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[4]/div[1]/label[1]");
                 ResultPageAP.ClickOnOneEnergy(driver, 2, 1);
-                WaitS.WaitForElementToBeVisible(driver, "/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[4]/div[1]/label[1]");
                 ResultPageAP.ClickOnOneEnergy(driver, 1, 2);
                 OffersNum[3] = ResultPageAP.GetOffersNumber(driver);
 
@@ -381,25 +349,26 @@ public class ResultPageTest {
     public Object[] UrlsTobeTested() {
 
         Object[] URLS = new Object[] {
-                "http://es.store.peugeot.inetpsa.com/Busqueda-por-criterio?lat=40.4167754&lng=-3.7037901999999576&LocationL=Madrid%2C%20Espa%C3%B1a&etd=0",
-                "http://fr.store.peugeot.inetpsa.com/Recherche-par-critere?lat=48.856614&lng=2.3522219000000177&LocationL=Paris%2C%20France&etd=0",
-                "http://it.store.peugeot.inetpsa.com/Cerca-per-categorie?lat=45.7805759&lng=12.837399199999936&LocationL=30026%20Portogruaro%20VE%2C%20Italia&etd=0" };
-        return URLS;
-    }
 
-    @DataProvider(name = "UrlsProvider")
-    public Object[] UrlsTobeTested1() {
-
-        Object[] URLS = new Object[] {
                 "http://fr.store.peugeot.inetpsa.com/Recherche-par-critere?lat=48.856614&lng=2.3522219000000177&LocationL=Paris%2C%20France&etd=0" };
         return URLS;
     }
 
-    @DataProvider(name = "UrlsProvider2")
+    @DataProvider(name = "UrlsProvider")
     public Object[] UrlsTobeTestd2() {
 
         Object[] URLS = new Object[] {
+                "http://fr.store.peugeot.inetpsa.com/Recherche-par-critere?lat=48.856614&lng=2.3522219000000177&LocationL=Paris%2C%20France&etd=0",
+                "http://es.store.peugeot.inetpsa.com/Busqueda-por-criterio?lat=40.4167754&lng=-3.7037901999999576&LocationL=Madrid%2C%20Espa%C3%B1a&etd=0",
                 "http://it.store.peugeot.inetpsa.com/Cerca-per-categorie?lat=45.7805759&lng=12.837399199999936&LocationL=30026%20Portogruaro%20VE%2C%20Italia&etd=0" };
+        return URLS;
+    }
+
+    @DataProvider(name = "UrlsProvider3")
+    public Object[] UrlsTobeTested3() {
+
+        Object[] URLS = new Object[] {
+                "http://es.store.peugeot.inetpsa.com/Busqueda-por-criterio?lat=40.4167754&lng=-3.7037901999999576&LocationL=Madrid%2C%20Espa%C3%B1a&etd=0" };
         return URLS;
     }
 

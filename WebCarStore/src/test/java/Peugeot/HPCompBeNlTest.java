@@ -18,7 +18,7 @@ public class HPCompBeNlTest {
     public void BeforeTest() {
 
         driver = InitialiseDrivers.InitialiseChromDriver();
-        driver.get("http://E562418:Id133499@be.store.peugeot.inetpsa.com/nl/Home");
+        driver.get("http://E562418:Lm133499@be.store.peugeot.inetpsa.com/nl/Home");
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
         hp.CloseCokies(driver);

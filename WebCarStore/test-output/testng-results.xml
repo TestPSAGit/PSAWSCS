@@ -1,145 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
+<testng-results skipped="0" failed="0" ignored="0" total="30" passed="30">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="53843" started-at="2019-05-29T09:13:42Z" finished-at="2019-05-29T09:14:36Z">
+  <suite name="Default suite" duration-ms="92725" started-at="2019-06-11T12:02:56Z" finished-at="2019-06-11T12:04:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="53843" started-at="2019-05-29T09:13:42Z" finished-at="2019-05-29T09:14:36Z">
-      <class name="Peugeot.ProductPageTest">
-        <test-method status="PASS" signature="ThePriceInTheProductPageIsEqualToThePriceInThePopoup(java.lang.String)[pri:1, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePriceInTheProductPageIsEqualToThePriceInThePopoup" duration-ms="17857" started-at="2019-05-29T09:13:42Z" data-provider="UrlsProvider" finished-at="2019-05-29T09:14:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://fr.store.peugeot.inetpsa.com/Recherche-par-critere?lat=48.856614&lng=2.3522219000000177&LocationL=Paris%2C%20France&etd=0&mbd=1PT9S0000030]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="92725" started-at="2019-06-11T12:02:56Z" finished-at="2019-06-11T12:04:29Z">
+      <class name="Peugeot.HPCompFrTest">
+        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:Peugeot.HPCompFrTest@51b7e5df]" name="BeforeTest" is-config="true" duration-ms="20246" started-at="2019-06-11T12:02:36Z" finished-at="2019-06-11T12:02:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ThePriceInTheProductPageIsEqualToThePriceInThePopoup -->
-        <test-method status="PASS" signature="ThePriceInTheProductPageIsEqualToThePriceInThePopoup(java.lang.String)[pri:1, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePriceInTheProductPageIsEqualToThePriceInThePopoup" duration-ms="29469" started-at="2019-05-29T09:14:00Z" data-provider="UrlsProvider" finished-at="2019-05-29T09:14:30Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://fr.store.peugeot.inetpsa.com/Recherche-par-critere?lat=48.856614&lng=2.3522219000000177&LocationL=Paris%2C%20France&etd=0&mbd=1PP7S0000146]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="ThePageTitleisCorrect()[pri:1, instance:Peugeot.HPCompFrTest@51b7e5df]" name="ThePageTitleisCorrect" duration-ms="1950" started-at="2019-06-11T12:02:56Z" finished-at="2019-06-11T12:02:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ThePriceInTheProductPageIsEqualToThePriceInThePopoup -->
-        <test-method status="PASS" signature="ThePriceeforeOptionsIsLowerThanTheTTCPrice(java.lang.String)[pri:2, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePriceeforeOptionsIsLowerThanTheTTCPrice" duration-ms="1221" started-at="2019-05-29T09:14:30Z" data-provider="UrlsProvider" finished-at="2019-05-29T09:14:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://fr.store.peugeot.inetpsa.com/Recherche-par-critere?lat=48.856614&lng=2.3522219000000177&LocationL=Paris%2C%20France&etd=0&mbd=1PT9S0000030]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- ThePageTitleisCorrect -->
+        <test-method status="PASS" signature="ThePeugeotLogoIsDisplayed()[pri:2, instance:Peugeot.HPCompFrTest@51b7e5df]" name="ThePeugeotLogoIsDisplayed" duration-ms="107" started-at="2019-06-11T12:02:58Z" finished-at="2019-06-11T12:02:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ThePriceeforeOptionsIsLowerThanTheTTCPrice -->
-        <test-method status="PASS" signature="ThePriceeforeOptionsIsLowerThanTheTTCPrice(java.lang.String)[pri:2, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePriceeforeOptionsIsLowerThanTheTTCPrice" duration-ms="1013" started-at="2019-05-29T09:14:31Z" data-provider="UrlsProvider" finished-at="2019-05-29T09:14:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://fr.store.peugeot.inetpsa.com/Recherche-par-critere?lat=48.856614&lng=2.3522219000000177&LocationL=Paris%2C%20France&etd=0&mbd=1PP7S0000146]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- ThePeugeotLogoIsDisplayed -->
+        <test-method status="PASS" signature="TheTextUnderThePageTitleIsCorrect()[pri:3, instance:Peugeot.HPCompFrTest@51b7e5df]" name="TheTextUnderThePageTitleIsCorrect" duration-ms="196" started-at="2019-06-11T12:02:58Z" finished-at="2019-06-11T12:02:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ThePriceeforeOptionsIsLowerThanTheTTCPrice -->
-        <test-method status="PASS" signature="ThePopupPriceDetailsCanBeOpened(java.lang.String)[pri:3, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePopupPriceDetailsCanBeOpened" duration-ms="441" started-at="2019-05-29T09:14:32Z" data-provider="UrlsProvider" finished-at="2019-05-29T09:14:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://fr.store.peugeot.inetpsa.com/Recherche-par-critere?lat=48.856614&lng=2.3522219000000177&LocationL=Paris%2C%20France&etd=0&mbd=1PT9S0000030]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- TheTextUnderThePageTitleIsCorrect -->
+        <test-method status="PASS" signature="GotToHomePageWhenClickingOnThePeugeotLogo()[pri:4, instance:Peugeot.HPCompFrTest@51b7e5df]" name="GotToHomePageWhenClickingOnThePeugeotLogo" duration-ms="6927" started-at="2019-06-11T12:02:59Z" finished-at="2019-06-11T12:03:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ThePopupPriceDetailsCanBeOpened -->
-        <test-method status="PASS" signature="ThePopupPriceDetailsCanBeOpened(java.lang.String)[pri:3, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePopupPriceDetailsCanBeOpened" duration-ms="485" started-at="2019-05-29T09:14:32Z" data-provider="UrlsProvider" finished-at="2019-05-29T09:14:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://fr.store.peugeot.inetpsa.com/Recherche-par-critere?lat=48.856614&lng=2.3522219000000177&LocationL=Paris%2C%20France&etd=0&mbd=1PP7S0000146]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- GotToHomePageWhenClickingOnThePeugeotLogo -->
+        <test-method status="PASS" signature="TheFacebookIconeIsPresent()[pri:6, instance:Peugeot.HPCompFrTest@51b7e5df]" name="TheFacebookIconeIsPresent" duration-ms="4336" started-at="2019-06-11T12:03:05Z" finished-at="2019-06-11T12:03:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ThePopupPriceDetailsCanBeOpened -->
-        <test-method status="PASS" signature="ThePopupPriceDetailsCanBeClosed(java.lang.String)[pri:4, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePopupPriceDetailsCanBeClosed" duration-ms="507" started-at="2019-05-29T09:14:33Z" data-provider="UrlsProvider" finished-at="2019-05-29T09:14:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://fr.store.peugeot.inetpsa.com/Recherche-par-critere?lat=48.856614&lng=2.3522219000000177&LocationL=Paris%2C%20France&etd=0&mbd=1PT9S0000030]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- TheFacebookIconeIsPresent -->
+        <test-method status="PASS" signature="GotFacebookPageWhenClickingTheFacebookIcone()[pri:7, instance:Peugeot.HPCompFrTest@51b7e5df]" name="GotFacebookPageWhenClickingTheFacebookIcone" duration-ms="16670" started-at="2019-06-11T12:03:10Z" finished-at="2019-06-11T12:03:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ThePopupPriceDetailsCanBeClosed -->
-        <test-method status="PASS" signature="ThePopupPriceDetailsCanBeClosed(java.lang.String)[pri:4, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePopupPriceDetailsCanBeClosed" duration-ms="544" started-at="2019-05-29T09:14:33Z" data-provider="UrlsProvider" finished-at="2019-05-29T09:14:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://fr.store.peugeot.inetpsa.com/Recherche-par-critere?lat=48.856614&lng=2.3522219000000177&LocationL=Paris%2C%20France&etd=0&mbd=1PP7S0000146]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- GotFacebookPageWhenClickingTheFacebookIcone -->
+        <test-method status="PASS" signature="TheUserGeneralConditionsTextIsPresent()[pri:8, instance:Peugeot.HPCompFrTest@51b7e5df]" name="TheUserGeneralConditionsTextIsPresent" duration-ms="271" started-at="2019-06-11T12:03:26Z" finished-at="2019-06-11T12:03:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ThePopupPriceDetailsCanBeClosed -->
-        <test-method status="PASS" signature="ThePriceEstimationCanBeOpened(java.lang.String)[pri:5, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePriceEstimationCanBeOpened" duration-ms="791" started-at="2019-05-29T09:14:34Z" data-provider="UrlsProvider" finished-at="2019-05-29T09:14:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://fr.store.peugeot.inetpsa.com/Recherche-par-critere?lat=48.856614&lng=2.3522219000000177&LocationL=Paris%2C%20France&etd=0&mbd=1PT9S0000030]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- TheUserGeneralConditionsTextIsPresent -->
+        <test-method status="PASS" signature="TheCookiesTextIsPresent()[pri:9, instance:Peugeot.HPCompFrTest@51b7e5df]" name="TheCookiesTextIsPresent" duration-ms="80" started-at="2019-06-11T12:03:27Z" finished-at="2019-06-11T12:03:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ThePriceEstimationCanBeOpened -->
-        <test-method status="PASS" signature="ThePriceEstimationCanBeOpened(java.lang.String)[pri:5, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePriceEstimationCanBeOpened" duration-ms="518" started-at="2019-05-29T09:14:35Z" data-provider="UrlsProvider" finished-at="2019-05-29T09:14:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://fr.store.peugeot.inetpsa.com/Recherche-par-critere?lat=48.856614&lng=2.3522219000000177&LocationL=Paris%2C%20France&etd=0&mbd=1PP7S0000146]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- TheCookiesTextIsPresent -->
+        <test-method status="PASS" signature="GotTheUserGeneralConditionsPDF()[pri:10, instance:Peugeot.HPCompFrTest@51b7e5df]" name="GotTheUserGeneralConditionsPDF" duration-ms="3573" started-at="2019-06-11T12:03:27Z" finished-at="2019-06-11T12:03:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ThePriceEstimationCanBeOpened -->
-        <test-method status="PASS" signature="ThePriceEstimationCanBeClosed(java.lang.String)[pri:6, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePriceEstimationCanBeClosed" duration-ms="435" started-at="2019-05-29T09:14:35Z" data-provider="UrlsProvider" finished-at="2019-05-29T09:14:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://fr.store.peugeot.inetpsa.com/Recherche-par-critere?lat=48.856614&lng=2.3522219000000177&LocationL=Paris%2C%20France&etd=0&mbd=1PT9S0000030]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- GotTheUserGeneralConditionsPDF -->
+        <test-method status="PASS" signature="GotTheCookiesPopUp()[pri:11, instance:Peugeot.HPCompFrTest@51b7e5df]" name="GotTheCookiesPopUp" duration-ms="4373" started-at="2019-06-11T12:03:30Z" finished-at="2019-06-11T12:03:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ThePriceEstimationCanBeClosed -->
-        <test-method status="PASS" signature="ThePriceEstimationCanBeClosed(java.lang.String)[pri:6, instance:Peugeot.ProductPageTest@aecb35a]" name="ThePriceEstimationCanBeClosed" duration-ms="500" started-at="2019-05-29T09:14:36Z" data-provider="UrlsProvider" finished-at="2019-05-29T09:14:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://fr.store.peugeot.inetpsa.com/Recherche-par-critere?lat=48.856614&lng=2.3522219000000177&LocationL=Paris%2C%20France&etd=0&mbd=1PP7S0000146]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- GotTheCookiesPopUp -->
+        <test-method status="PASS" signature="TheMySaveIconIsDisplayed()[pri:12, instance:Peugeot.HPCompFrTest@51b7e5df]" name="TheMySaveIconIsDisplayed" duration-ms="65" started-at="2019-06-11T12:03:35Z" finished-at="2019-06-11T12:03:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ThePriceEstimationCanBeClosed -->
-      </class> <!-- Peugeot.ProductPageTest -->
+        </test-method> <!-- TheMySaveIconIsDisplayed -->
+        <test-method status="PASS" signature="TheMySaveTextIsDisplayed()[pri:13, instance:Peugeot.HPCompFrTest@51b7e5df]" name="TheMySaveTextIsDisplayed" duration-ms="60" started-at="2019-06-11T12:03:35Z" finished-at="2019-06-11T12:03:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheMySaveTextIsDisplayed -->
+        <test-method status="PASS" signature="TheNeedHelpIconeIsDisplayed()[pri:14, instance:Peugeot.HPCompFrTest@51b7e5df]" name="TheNeedHelpIconeIsDisplayed" duration-ms="48" started-at="2019-06-11T12:03:35Z" finished-at="2019-06-11T12:03:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheNeedHelpIconeIsDisplayed -->
+        <test-method status="PASS" signature="TheNeedHelpTextIsDisplayed()[pri:15, instance:Peugeot.HPCompFrTest@51b7e5df]" name="TheNeedHelpTextIsDisplayed" duration-ms="54" started-at="2019-06-11T12:03:35Z" finished-at="2019-06-11T12:03:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheNeedHelpTextIsDisplayed -->
+        <test-method status="PASS" signature="GotAPopupWhenClickingOnNeedHelpBotton()[pri:16, instance:Peugeot.HPCompFrTest@51b7e5df]" name="GotAPopupWhenClickingOnNeedHelpBotton" duration-ms="3388" started-at="2019-06-11T12:03:35Z" finished-at="2019-06-11T12:03:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotAPopupWhenClickingOnNeedHelpBotton -->
+        <test-method status="PASS" signature="TheTwiterIconeIsPresent()[pri:17, instance:Peugeot.HPCompFrTest@51b7e5df]" name="TheTwiterIconeIsPresent" duration-ms="73" started-at="2019-06-11T12:03:38Z" finished-at="2019-06-11T12:03:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheTwiterIconeIsPresent -->
+        <test-method status="PASS" signature="TheYoutubeIconeIsPresent()[pri:18, instance:Peugeot.HPCompFrTest@51b7e5df]" name="TheYoutubeIconeIsPresent" duration-ms="67" started-at="2019-06-11T12:03:38Z" finished-at="2019-06-11T12:03:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheYoutubeIconeIsPresent -->
+        <test-method status="PASS" signature="GotTwiterPageWhenClickingTheTwiterIcone()[pri:19, instance:Peugeot.HPCompFrTest@51b7e5df]" name="GotTwiterPageWhenClickingTheTwiterIcone" duration-ms="4869" started-at="2019-06-11T12:03:39Z" finished-at="2019-06-11T12:03:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotTwiterPageWhenClickingTheTwiterIcone -->
+        <test-method status="PASS" signature="GotYoutubePageWhenClickingTheyoutubeIcone()[pri:20, instance:Peugeot.HPCompFrTest@51b7e5df]" name="GotYoutubePageWhenClickingTheyoutubeIcone" duration-ms="5742" started-at="2019-06-11T12:03:43Z" finished-at="2019-06-11T12:03:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotYoutubePageWhenClickingTheyoutubeIcone -->
+        <test-method status="PASS" signature="TheSellGeneralConditionsTextIsPresent()[pri:21, instance:Peugeot.HPCompFrTest@51b7e5df]" name="TheSellGeneralConditionsTextIsPresent" duration-ms="101" started-at="2019-06-11T12:03:49Z" finished-at="2019-06-11T12:03:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheSellGeneralConditionsTextIsPresent -->
+        <test-method status="PASS" signature="GotTheSellGeneralConditionsPDF()[pri:22, instance:Peugeot.HPCompFrTest@51b7e5df]" name="GotTheSellGeneralConditionsPDF" duration-ms="3487" started-at="2019-06-11T12:03:49Z" finished-at="2019-06-11T12:03:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotTheSellGeneralConditionsPDF -->
+        <test-method status="PASS" signature="GotTheRightUrlWhenClickingOnCarConfiguratorLink()[pri:23, instance:Peugeot.HPCompFrTest@51b7e5df]" name="GotTheRightUrlWhenClickingOnCarConfiguratorLink" duration-ms="4341" started-at="2019-06-11T12:03:53Z" finished-at="2019-06-11T12:03:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotTheRightUrlWhenClickingOnCarConfiguratorLink -->
+        <test-method status="PASS" signature="GotTheRightUrlWhenClickingOnProfessionalCarsLink()[pri:24, instance:Peugeot.HPCompFrTest@51b7e5df]" name="GotTheRightUrlWhenClickingOnProfessionalCarsLink" duration-ms="4019" started-at="2019-06-11T12:03:57Z" finished-at="2019-06-11T12:04:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotTheRightUrlWhenClickingOnProfessionalCarsLink -->
+        <test-method status="PASS" signature="GotTheRightUrlWhenClickingOnCarAccessoriesLink()[pri:25, instance:Peugeot.HPCompFrTest@51b7e5df]" name="GotTheRightUrlWhenClickingOnCarAccessoriesLink" duration-ms="4464" started-at="2019-06-11T12:04:01Z" finished-at="2019-06-11T12:04:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotTheRightUrlWhenClickingOnCarAccessoriesLink -->
+        <test-method status="PASS" signature="GotTheRightUrlWhenClickingOnUsedCarsLink()[pri:26, instance:Peugeot.HPCompFrTest@51b7e5df]" name="GotTheRightUrlWhenClickingOnUsedCarsLink" duration-ms="3812" started-at="2019-06-11T12:04:06Z" finished-at="2019-06-11T12:04:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotTheRightUrlWhenClickingOnUsedCarsLink -->
+        <test-method status="PASS" signature="GotTheRightUrlWhenClickingOnTheOrderStepsLink()[pri:27, instance:Peugeot.HPCompFrTest@51b7e5df]" name="GotTheRightUrlWhenClickingOnTheOrderStepsLink" duration-ms="3612" started-at="2019-06-11T12:04:09Z" finished-at="2019-06-11T12:04:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotTheRightUrlWhenClickingOnTheOrderStepsLink -->
+        <test-method status="PASS" signature="GotTheRightUrlWhenClickingOnWebsotrePaimentLink()[pri:27, instance:Peugeot.HPCompFrTest@51b7e5df]" name="GotTheRightUrlWhenClickingOnWebsotrePaimentLink" duration-ms="3651" started-at="2019-06-11T12:04:13Z" finished-at="2019-06-11T12:04:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotTheRightUrlWhenClickingOnWebsotrePaimentLink -->
+        <test-method status="PASS" signature="GotTheRightUrlWhenClickingOnTheDelieveryStepsLink()[pri:28, instance:Peugeot.HPCompFrTest@51b7e5df]" name="GotTheRightUrlWhenClickingOnTheDelieveryStepsLink" duration-ms="3722" started-at="2019-06-11T12:04:17Z" finished-at="2019-06-11T12:04:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotTheRightUrlWhenClickingOnTheDelieveryStepsLink -->
+        <test-method status="PASS" signature="GotTheRightUrlWhenClickingOnTheFAQLink()[pri:29, instance:Peugeot.HPCompFrTest@51b7e5df]" name="GotTheRightUrlWhenClickingOnTheFAQLink" duration-ms="3591" started-at="2019-06-11T12:04:20Z" finished-at="2019-06-11T12:04:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotTheRightUrlWhenClickingOnTheFAQLink -->
+        <test-method status="PASS" signature="GotTheRightUrlWhenClickingOnTheDealersLink()[pri:30, instance:Peugeot.HPCompFrTest@51b7e5df]" name="GotTheRightUrlWhenClickingOnTheDealersLink" duration-ms="4875" started-at="2019-06-11T12:04:24Z" finished-at="2019-06-11T12:04:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GotTheRightUrlWhenClickingOnTheDealersLink -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:Peugeot.HPCompFrTest@51b7e5df]" name="AfterTest" is-config="true" duration-ms="2358" started-at="2019-06-11T12:04:29Z" finished-at="2019-06-11T12:04:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- Peugeot.HPCompFrTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

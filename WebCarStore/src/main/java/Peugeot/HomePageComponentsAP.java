@@ -166,6 +166,26 @@ public class HomePageComponentsAP {
 
     }
 
+    static String[] GettheUrlwhenClckingOnAlink(WebDriver driver, String xpath) {
+        SwitchToCurrentUrl(driver);
+        driver.findElement(By.xpath(xpath)).click();
+        WaitS.Wait(3000);
+        SwitchToCurrentUrl(driver);
+        driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
+        String[] CurretURL = new String[2];
+        CurretURL[0] = driver.getCurrentUrl();
+        CurretURL[1] = "true";
+        try {
+            driver.findElement(By.xpath("//html//body/h1")).isDisplayed();
+        } catch (NoSuchElementException ex) {
+            CurretURL[1] = "false";
+        }
+
+        driver.close();
+        return CurretURL;
+
+    }
+
     static void SwitchToCurrentUrl(WebDriver driver) {
 
         for (String handle : driver.getWindowHandles()) {

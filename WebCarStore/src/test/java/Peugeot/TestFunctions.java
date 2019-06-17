@@ -11,7 +11,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import Utilities.InitialiseDrivers;
-import Utilities.WaitS;
 
 public class TestFunctions {
     static WebDriver driver;
@@ -35,7 +34,7 @@ public class TestFunctions {
     public void Thedels() {
         ResultPageAP.OpenTheModelsMenu(driver);
         ResultPageAP.SelectaModelFromTheModelsList(driver, 5);
-        WaitS.WaitForElementToBeVisible(driver, "/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[4]/div[1]/label[1]/i[1]");
+        // WaitS.WaitForElementToBeVisible(driver, "/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/div[4]/div[1]/label[1]/i[1]");
         String[] Energies = ResultPageAP.GetTheEnergiesList(driver);
 
         for (int i = 1; i >= Energies.length; i++) {

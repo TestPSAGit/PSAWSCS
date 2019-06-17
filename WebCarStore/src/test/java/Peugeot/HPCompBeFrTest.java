@@ -18,7 +18,7 @@ public class HPCompBeFrTest {
     public void BeforeTest() {
 
         driver = InitialiseDrivers.InitialiseChromDriver();
-        driver.get("http://E562418:Id133499@be.store.peugeot.inetpsa.com/fr/Accueil");
+        driver.get("http://E562418:Lm133499@be.store.peugeot.inetpsa.com/fr/Accueil");
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
         // driver.findElement(By.className("psac_noselect")).click();
@@ -98,6 +98,45 @@ public class HPCompBeFrTest {
 
     public void GotTheCookiesPopUp() {
         assert (hp.CheckClickOnCookies(driver) == true);
+    }
+
+    @Test(priority = 23)
+
+    public void GotTheRightUrlWhenClickingOnCarConfiguratorLink() {
+
+        String[] Result = hp.GettheUrlwhenClckingOnAlink(driver, "//a[contains(text(),'Configurez votre véhicule')]");
+        assert (Result[0].contains("www.peugeot.be/fr/gamme/nos-modeles.html"));
+        assert (Result[1] != "true");
+    }
+
+    @Test(priority = 25)
+
+    public void GotTheRightUrlWhenClickingOnCarAccessoriesLink() {
+
+        String[] Result = hp.GettheUrlwhenClckingOnAlink(driver, "//a[contains(text(),'Peugeot Accessoires')]");
+        assert (Result[0].contains("accessoires.peugeot.be/fr-BE/accessoires"));
+        assert (Result[1] != "true");
+
+    }
+
+    @Test(priority = 26)
+
+    public void GotTheRightUrlWhenClickingOnUsedCarsLink() {
+
+        String[] Result = hp.GettheUrlwhenClckingOnAlink(driver, "//a[contains(text(),\"Véhicules d'occasion Peugeot\")]");
+        assert (Result[0].contains("peugeot-occasionsdulion.be/frbe/accueil"));
+        assert (Result[1] != "true");
+
+    }
+
+    @Test(priority = 30)
+
+    public void GotTheRightUrlWhenClickingOnTheDealersLink() {
+
+        String[] Result = hp.GettheUrlwhenClckingOnAlink(driver, "//a[contains(text(),'Points de vente')]");
+        assert (Result[0].contains("www.peugeot.be/fr/points-de-vente.html"));
+        assert (Result[1] != "true");
+
     }
 
     @AfterSuite

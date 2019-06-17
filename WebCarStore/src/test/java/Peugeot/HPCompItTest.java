@@ -18,7 +18,7 @@ public class HPCompItTest {
     public void BeforeTest() {
 
         driver = InitialiseDrivers.InitialiseChromDriver();
-        driver.get("https://E562418:Id133499@webstore.peugeot.it/HOME");
+        driver.get("https://E562418:Lm133499@webstore.peugeot.it/HOME");
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
         hp.CloseCokies(driver);

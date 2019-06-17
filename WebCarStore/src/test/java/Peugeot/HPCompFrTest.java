@@ -23,7 +23,7 @@ public class HPCompFrTest {
     public void BeforeTest() {
 
         driver = InitialiseDrivers.InitialiseChromDriver();
-        driver.get("https://E562418:Id133499@www.peugeotwebstore.com/Accueil");
+        driver.get("https://E562418:Lm133499@www.peugeotwebstore.com/Accueil");
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
         hp.CloseCokies(driver);
@@ -162,6 +162,86 @@ public class HPCompFrTest {
     public void GotTheSellGeneralConditionsPDF() {
         assert (hp.CheckClickOnsellGeneralConditions(driver, "//a[contains(text(),'Conditions générales de vente')]")
                 .contains("CGV_PEUGEOT_WEBSTORE.pdf"));
+    }
+
+    @Test(priority = 23)
+
+    public void GotTheRightUrlWhenClickingOnCarConfiguratorLink() {
+        String[] Result = hp.GettheUrlwhenClckingOnAlink(driver, "//a[contains(text(),'Configurez votre véhicule')]");
+        assert (Result[0].contains("www.peugeot.fr/gamme/presentation-de-la-gamme.html"));
+        assert (Result[1] != "true");
+    }
+
+    @Test(priority = 24)
+
+    public void GotTheRightUrlWhenClickingOnProfessionalCarsLink() {
+
+        String[] Result = hp.GettheUrlwhenClckingOnAlink(driver, "//a[contains(text(),'Nos véhicules professionnels')]");
+        assert (Result[0].contains("www.peugeotwebstore.com/pro/Accueil"));
+        assert (Result[1] != "true");
+
+    }
+
+    @Test(priority = 25)
+
+    public void GotTheRightUrlWhenClickingOnCarAccessoriesLink() {
+        String[] Result = hp.GettheUrlwhenClckingOnAlink(driver, "//a[contains(text(),'Accessoires Peugeot')]");
+        assert (Result[0].contains("accessoires.peugeot.fr/fr-FR/accessoires"));
+        assert (Result[1] != "true");
+
+    }
+
+    @Test(priority = 26)
+
+    public void GotTheRightUrlWhenClickingOnUsedCarsLink() {
+        String[] Result = hp.GettheUrlwhenClckingOnAlink(driver, "//a[contains(text(),\"Véhicules d'occasion\")]");
+        assert (Result[0].contains("www.occasionsdulion.com"));
+        assert (Result[1] != "true");
+
+    }
+
+    @Test(priority = 27)
+
+    public void GotTheRightUrlWhenClickingOnWebsotrePaimentLink() {
+        String[] Result = hp.GettheUrlwhenClckingOnAlink(driver, "//a[contains(text(),'Le paiement sur Webstore')]");
+        assert (Result[0].contains("www.peugeotwebstore.com/FAQ#Paiement"));
+        assert (Result[1] != "true");
+
+    }
+
+    @Test(priority = 27)
+
+    public void GotTheRightUrlWhenClickingOnTheOrderStepsLink() {
+        String[] Result = hp.GettheUrlwhenClckingOnAlink(driver, "//a[contains(text(),'Les étapes de mon achat')]");
+        assert (Result[0].contains("www.peugeotwebstore.com/FAQ#Commande"));
+        assert (Result[1] != "true");
+
+    }
+
+    @Test(priority = 28)
+
+    public void GotTheRightUrlWhenClickingOnTheDelieveryStepsLink() {
+        String[] Result = hp.GettheUrlwhenClckingOnAlink(driver, "//a[contains(text(),'Modalités de livraison')]");
+        assert (Result[0].contains("www.peugeotwebstore.com/FAQ#LivraisonContactConcessionnaire"));
+        assert (Result[1] != "true");
+
+    }
+
+    @Test(priority = 29)
+
+    public void GotTheRightUrlWhenClickingOnTheFAQLink() {
+        String[] Result = hp.GettheUrlwhenClckingOnAlink(driver, "//a[contains(text(),'FAQ')]");
+        assert (Result[0].contains("www.peugeotwebstore.com/FAQ"));
+
+    }
+
+    @Test(priority = 30)
+
+    public void GotTheRightUrlWhenClickingOnTheDealersLink() {
+        String[] Result = hp.GettheUrlwhenClckingOnAlink(driver, "//a[contains(text(),'Points de vente')]");
+        assert (Result[0].contains("www.peugeot.fr/points-de-vente.html"));
+        assert (Result[1] != "true");
+
     }
 
     @AfterSuite

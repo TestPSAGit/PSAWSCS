@@ -3,11 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Peugeot.ProductPageTest">
+      <class name="Peugeot.HPCompBeFrTest">
         <methods>
-          <include name="ThePopupPriceDetailsCanBeOpened" invocation-numbers="0"/>
+          <include name="TheTextUnderThePageTitleIsCorrect"/>
+          <include name="GotTheCookiesPopUp"/>
+          <include name="GotTheRightUrlWhenClickingOnUsedCarsLink"/>
+          <include name="AfterTest"/>
+          <include name="BeforeTest"/>
         </methods>
-      </class> <!-- Peugeot.ProductPageTest -->
+      </class> <!-- Peugeot.HPCompBeFrTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
