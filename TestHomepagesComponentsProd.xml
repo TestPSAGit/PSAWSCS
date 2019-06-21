@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="TestAllHome" parallel="methods" thread-count="1">
+
+    <test name="HomePageComponents">
+        <classes>
+            <class name="Peugeot.HPCompFrTest" />
+            <class name="Citroën.HPCompFrTest" />
+            <class name="Citroën.HPCompESTest" />
+            <class name="Citroën.HPCompItTest" />
+            <class name="DS.HPCompItTest" />
+            <class name="DS.HPCompFrTest" />
+            <class name="DS.HPCompESTest" />
+        </classes>
+    </test>
+
+
+</suite>
